@@ -112,7 +112,9 @@
   .cta-line .ic{width:18px;height:18px;fill:#06C755}
 
   /* 3 circle points */
-  .points3-wrap{background:var(--bg-soft);padding:44px 0 48px}
+  .points3-wrap{position:relative;background:#EFE6DD url('images/bg_silk.png') center / cover no-repeat;padding:44px 0 48px}
+  .points3-wrap::before{content:"";position:absolute;inset:0;z-index:1;background:rgba(248,242,236,.62)}
+  .points3-wrap > *{position:relative;z-index:2}
   .points3{display:flex;justify-content:center;gap:10px;padding:0 16px;margin-top:8px}
   .p3{flex:1;max-width:140px;text-align:center}
   .p3-circle{position:relative;width:92px;height:92px;margin:0 auto;border-radius:50%;background-size:cover;background-position:center;
@@ -123,11 +125,12 @@
   .p3-d{font-size:10.5px;color:var(--text-soft);margin-top:5px;line-height:1.5}
 
   /* generic content block */
-  .blk{padding:54px 0}
-  .blk.soft{background:var(--bg-soft)}
-  .blk.accent{background:var(--bg-accent)}
-  .blk.pearl{background:var(--bg-base)}
-  .blk.dark{background:var(--ink);color:#fff}
+  .blk{padding:54px 0;position:relative}
+  .blk > *{position:relative;z-index:2}
+  .blk.soft,.blk.pearl,.blk.accent{background:#EFE6DD url('images/bg_silk.png') center / cover no-repeat}
+  .blk.soft::before,.blk.pearl::before,.blk.accent::before{content:"";position:absolute;inset:0;z-index:1;background:rgba(248,242,236,.66)}
+  .blk.dark{background:#241E1B url('images/bg_velvet.png') center / cover no-repeat;color:#fff}
+  .blk.dark::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(34,28,25,.72),rgba(34,28,25,.84))}
   .sec-head{text-align:center;margin-bottom:30px}
   .sec-head .eyebrow{margin-bottom:8px}
 
@@ -278,7 +281,9 @@
   .closing .cp{font-size:13px;line-height:2.0;color:#f0e6dd;margin-top:16px}
 
   /* footer */
-  .ft{background:var(--ink-2);color:#cbbcb1;text-align:center;padding:34px 26px 110px}
+  .ft{position:relative;background:#241E1B url('images/bg_velvet.png') center / cover no-repeat;color:#cbbcb1;text-align:center;padding:34px 26px 110px}
+  .ft::before{content:"";position:absolute;inset:0;z-index:1;background:rgba(34,28,25,.82)}
+  .ft > *{position:relative;z-index:2}
   .ft .fb{font-family:var(--font-en);font-style:italic;font-size:26px;letter-spacing:.16em;color:var(--gold-soft)}
   .ft .fl{font-size:10.5px;letter-spacing:.32em;color:var(--primary);margin-top:6px}
   .ft .fmeta{font-size:11px;line-height:1.9;margin-top:18px;color:#a89a8f}

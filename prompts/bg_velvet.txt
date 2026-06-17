@@ -1,0 +1,20 @@
+あなたは画像生成タスクを実行します。確認質問は一切せず、いきなり実行してください。
+
+利用可能な image_generation ツールを使って下記プロンプトで画像を1枚生成し、生成後 /Users/ume/Desktop/thepearls-lp/images/bg_velvet.png にコピー保存してください。
+
+プロンプト（英語、改変せず使用）:
+A soft, elegant, abstract dark luxury background texture of deep espresso brown, warm bronze and champagne-gold tones, soft velvet and silk folds with gentle warm golden light and soft bokeh highlights, luxurious and moody, smooth and refined. Vertical tall composition.
+
+STYLE:
+- Soft-focus, low contrast, calm and premium.
+- Lots of soft dark, even negative space so white text placed on top stays clearly readable.
+
+COLOR PALETTE (strictly): deep espresso #2B2420, warm bronze #6B4E3A, champagne gold #BFA168 soft glow, dark warm tones.
+
+CRITICAL CONSTRAINTS:
+- Vertical tall portrait orientation.
+- Photorealistic soft-focus texture, NOT illustration, NOT 3D, NOT cartoon.
+- NO text, NO letters, NO people, NO faces, NO hard-edged objects, NO logos, NO watermark.
+- Dark and soft overall so white text can be overlaid.
+
+完了したらコピー先パスを最終メッセージとして1行で出力してください。
