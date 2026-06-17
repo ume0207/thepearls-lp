@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Pearls｜神戸三宮の韓国肌管理・フェイシャルワックス｜初回体験8,800円</title>
+<meta name="description" content="神戸三宮の韓国肌管理・フェイシャルワックス専門サロン「The Pearls（ザ パールズ）」。毛穴・くすみ・乾燥・ごわつきに、素肌から透明感を。口コミ4.66点。初回ツヤ肌ワックス体験 通常9,800円→8,800円。JR・阪急三ノ宮駅 徒歩5分。">
+<meta property="og:title" content="The Pearls｜神戸三宮の韓国肌管理サロン｜初回ツヤ肌ワックス体験8,800円">
+<meta property="og:description" content="毛穴・くすみ・乾燥に、韓国肌管理で“素肌から変わる”。口コミ4.66点・無理な勧誘なし・都度払いOK。三ノ宮駅徒歩5分。">
+<meta property="og:type" content="website">
+<meta property="og:image" content="images/hero.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg-base:#FAF6F1;       /* pearl warm white */
+    --bg-soft:#F3E9E1;       /* champagne cream */
+    --bg-accent:#ECDBD3;     /* blush beige */
+    --ink:#2B2420;           /* espresso (dark bands) */
+    --ink-2:#372E28;
+    --primary:#B98A78;       /* rose-taupe (brand) */
+    --primary-dark:#9C6B58;
+    --primary-soft:#F0E2DB;
+    --gold:#BFA168;          /* champagne gold accent */
+    --gold-soft:#E7D6B4;
+    --blush:#E3BFBC;         /* blush pink */
+    --text:#3A2F2A;
+    --text-soft:#7C6A60;
+    --line:#E4D6CB;
+    --cta:#06C755;           /* LINE green */
+    --cta-dark:#05A847;
+    --shadow-sm:0 2px 10px rgba(43,36,32,.06);
+    --shadow-md:0 14px 36px rgba(43,36,32,.12);
+    --shadow-lg:0 24px 60px rgba(43,36,32,.18);
+    --maxw:500px;
+    --font-h:"Shippori Mincho","Yu Mincho",serif;
+    --font-en:"Cormorant Garamond","Cormorant",serif;
+    --font-b:"Noto Sans JP","Hiragino Sans",sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:var(--font-b);
+    font-weight:400;
+    color:var(--text);
+    background:#E9DED4;
+    line-height:1.95;
+    font-feature-settings:"palt";
+    -webkit-font-smoothing:antialiased;
+    letter-spacing:.02em;
+  }
+  /* ===== shell ===== */
+  .shell{max-width:var(--maxw);margin:0 auto;background:var(--bg-base);position:relative;overflow:hidden;box-shadow:0 0 80px rgba(43,36,32,.14)}
+  img{max-width:100%;display:block}
+  section{position:relative}
+  .pad{padding:0 26px}
+  .center{text-align:center}
+
+  /* ===== sticky offer bar ===== */
+  .topbar{
+    position:sticky;top:0;z-index:60;
+    max-width:var(--maxw);margin:0 auto;
+    background:linear-gradient(100deg,var(--ink) 0%,#4a3b32 100%);
+    color:#fff;display:flex;align-items:center;justify-content:space-between;
+    padding:9px 16px;gap:10px;border-bottom:1px solid rgba(191,161,104,.5);
+  }
+  .topbar .tb-l{font-family:var(--font-en);font-style:italic;font-size:18px;letter-spacing:.14em;color:var(--gold-soft);line-height:1}
+  .topbar .tb-r{font-size:11px;font-weight:500;letter-spacing:.04em;text-align:right;line-height:1.35}
+  .topbar .tb-r b{color:#fff;font-size:13px}
+  .topbar .tb-r .y{color:var(--gold-soft)}
+
+  /* ===== eyebrow / headings ===== */
+  .eyebrow{font-family:var(--font-en);font-style:italic;font-weight:500;letter-spacing:.18em;color:var(--primary);font-size:15px;display:inline-block}
+  .eyebrow.gold{color:var(--gold)}
+  .eyebrow.light{color:var(--gold-soft)}
+  .sec-h{font-family:var(--font-h);font-weight:700;letter-spacing:.05em;line-height:1.5;color:var(--ink);font-size:25px}
+  .sec-h .sm{font-size:17px}
+  .lead{font-size:14.5px;line-height:2.0;color:var(--text-soft);font-weight:400}
+  .hr-orn{display:flex;align-items:center;justify-content:center;gap:12px;margin:14px 0}
+  .hr-orn::before,.hr-orn::after{content:"";height:1px;width:34px;background:var(--gold)}
+  .hr-orn span{width:6px;height:6px;border:1px solid var(--gold);transform:rotate(45deg)}
+
+  /* ===== reveal ===== */
+  .rv{opacity:0;transform:translateY(26px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
+  .rv.in{opacity:1;transform:none}
+
+  /* ===== HERO ===== */
+  .hero{
+    min-height:calc(100svh - 52px);
+    background:#E6D4C9 url('images/hero.png') center 28% / cover no-repeat;
+    display:flex;flex-direction:column;justify-content:space-between;
+    position:relative;
+  }
+  .hero::before{content:"";position:absolute;inset:0;
+    background:linear-gradient(180deg,rgba(250,246,241,.62) 0%,rgba(250,246,241,.10) 26%,rgba(43,36,32,0) 48%,rgba(43,36,32,.30) 78%,rgba(43,36,32,.74) 100%);}
+  .hero-top{position:relative;z-index:2;padding:20px 26px 0;text-align:center}
+  .hero-brand{font-family:var(--font-en);font-style:italic;font-weight:500;font-size:28px;letter-spacing:.16em;color:var(--ink);line-height:1}
+  .hero-loc{font-family:var(--font-b);font-weight:500;font-size:10px;letter-spacing:.4em;color:var(--primary-dark);margin-top:8px}
+  .hero-cat{
+    display:inline-block;margin-top:14px;font-size:10.5px;font-weight:700;letter-spacing:.16em;color:#fff;
+    background:linear-gradient(100deg,var(--primary) 0%,var(--primary-dark) 100%);
+    padding:6px 15px;border-radius:30px;box-shadow:var(--shadow-sm)}
+  .hero-h{margin-top:14px;font-family:var(--font-h);font-weight:800;color:var(--ink);
+    font-size:26px;line-height:1.55;letter-spacing:.04em;text-shadow:0 1px 18px rgba(250,246,241,.92)}
+  .hero-h .mk{
+    background:linear-gradient(transparent 62%,rgba(227,191,188,.85) 62%);padding:0 .06em}
+  .hero-h .big{font-size:30px;color:var(--primary-dark)}
+  .hero-bottom{position:relative;z-index:2;padding:0 18px 90px}
+  .hero-offer{text-align:center;padding:0 6px}
+  .ho-line{color:#fff;font-family:var(--font-h);font-weight:700;font-size:16px;letter-spacing:.04em;text-shadow:0 2px 14px rgba(43,36,32,.7)}
+  .ho-tag{display:inline-block;background:var(--gold);color:#fff;font-size:10px;font-weight:700;padding:3px 11px;border-radius:20px;margin-right:8px;letter-spacing:.08em;vertical-align:middle}
+  .ho-price{margin-top:7px;color:#fff;font-size:13px;letter-spacing:.03em;text-shadow:0 2px 14px rgba(43,36,32,.7);display:flex;align-items:center;justify-content:center;gap:7px}
+  .ho-price .was{text-decoration:line-through;text-decoration-color:var(--blush);opacity:.85}
+  .ho-price .arr{color:var(--gold-soft)}
+  .ho-price b{font-family:var(--font-en);font-weight:600;font-size:36px;color:var(--gold-soft);line-height:.8}
+  .ho-price .yen{font-family:var(--font-b);font-size:15px;font-weight:700;color:var(--gold-soft)}
+  .ho-price small{font-size:10px;opacity:.85;align-self:flex-end;margin-bottom:4px}
+  .ho-trust{margin-top:8px;font-size:10.5px;color:#f0e6dd;letter-spacing:.06em;text-shadow:0 1px 10px rgba(43,36,32,.7)}
+
+  /* ===== CTA buttons ===== */
+  .cta-line{
+    display:flex;align-items:center;justify-content:center;gap:9px;
+    background:linear-gradient(180deg,#1ed760 0%,var(--cta) 55%,var(--cta-dark) 100%);
+    color:#fff;font-weight:700;font-size:17px;letter-spacing:.06em;
+    padding:16px 18px;border-radius:46px;text-decoration:none;
+    box-shadow:0 10px 26px rgba(6,199,85,.40);border:1px solid rgba(255,255,255,.35);
+    margin-top:14px;transition:transform .2s}
+  .cta-line:active{transform:scale(.98)}
+  .cta-line .ic{width:23px;height:23px;flex:0 0 auto}
+  .cta-line small{display:block;font-size:10.5px;font-weight:500;letter-spacing:.1em;opacity:.92;margin-top:1px}
+  .cta-sub{
+    display:flex;align-items:center;justify-content:center;gap:7px;
+    background:#fff;color:var(--ink);font-weight:700;font-size:14px;letter-spacing:.05em;
+    padding:13px;border-radius:44px;text-decoration:none;border:1px solid var(--line);
+    box-shadow:var(--shadow-sm);margin-top:10px}
+  .cta-sub .ic{width:17px;height:17px}
+
+  /* ===== badge bar ===== */
+  .badges{background:var(--ink);color:#fff;padding:22px 18px;display:grid;grid-template-columns:repeat(2,1fr);gap:16px 8px}
+  .badge{text-align:center;position:relative}
+  .badge:nth-child(odd)::after{content:"";position:absolute;right:-4px;top:14%;height:72%;width:1px;background:rgba(191,161,104,.4)}
+  .badge .bn{font-family:var(--font-en);font-weight:600;color:var(--gold-soft);font-size:34px;line-height:1}
+  .badge .bn small{font-size:15px;letter-spacing:.02em}
+  .badge .bl{font-size:11px;color:#d9ccc2;margin-top:5px;letter-spacing:.06em;font-weight:400}
+  .badge .stars{color:var(--gold);font-size:13px;letter-spacing:2px}
+
+  /* ===== generic content section ===== */
+  .blk{padding:54px 0}
+  .blk.soft{background:var(--bg-soft)}
+  .blk.accent{background:var(--bg-accent)}
+  .blk.pearl{background:var(--bg-base)}
+  .sec-head{text-align:center;margin-bottom:30px}
+  .sec-head .eyebrow{margin-bottom:8px}
+
+  /* ===== image band (text over image) ===== */
+  .band{position:relative;min-height:78vh;display:flex;align-items:flex-end;background-size:cover;background-position:center;color:#fff}
+  .band.short{min-height:60vh}
+  .band::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(43,36,32,.06) 0%,rgba(43,36,32,.30) 50%,rgba(43,36,32,.82) 100%)}
+  .band-in{position:relative;z-index:2;padding:34px 26px 40px;width:100%}
+  .band .eyebrow{color:var(--gold-soft)}
+  .band-h{font-family:var(--font-h);font-weight:700;font-size:26px;line-height:1.6;letter-spacing:.05em;text-shadow:0 2px 16px rgba(0,0,0,.4);margin-top:6px}
+  .band-h .mk{color:var(--gold-soft)}
+  .band-p{font-size:13.5px;line-height:2.0;color:#f3e9e1;margin-top:14px;text-shadow:0 1px 10px rgba(0,0,0,.5)}
+
+  /* ===== problem checklist ===== */
+  .worry-list{display:flex;flex-direction:column;gap:12px;margin-top:6px}
+  .worry{display:flex;align-items:center;gap:13px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:15px 16px;box-shadow:var(--shadow-sm)}
+  .worry .ck{flex:0 0 auto;width:26px;height:26px;border-radius:50%;background:var(--primary-soft);display:flex;align-items:center;justify-content:center}
+  .worry .ck svg{width:14px;height:14px;stroke:var(--primary-dark)}
+  .worry p{font-size:14px;font-weight:500;color:var(--ink-2);line-height:1.6}
+  .worry p b{color:var(--primary-dark);font-weight:700}
+  .worry-foot{text-align:center;margin-top:26px;font-family:var(--font-h);font-weight:700;font-size:18px;line-height:1.8;color:var(--ink)}
+  .worry-foot .em{color:var(--primary-dark);font-size:21px}
+
+  /* ===== education reason cards ===== */
+  .edu-q{font-family:var(--font-h);font-weight:700;font-size:21px;line-height:1.7;color:var(--ink);text-align:center;letter-spacing:.04em}
+  .edu-q .u{background:linear-gradient(transparent 60%,var(--gold-soft) 60%)}
+  .edu-body{font-size:14px;line-height:2.05;color:var(--text);margin-top:18px}
+  .edu-body b{color:var(--primary-dark);font-weight:700}
+  .keybox{background:#fff;border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:0 12px 12px 0;padding:18px 18px;margin-top:22px;box-shadow:var(--shadow-sm)}
+  .keybox .kt{font-family:var(--font-h);font-weight:700;font-size:15px;color:var(--primary-dark);letter-spacing:.04em}
+  .keybox .kp{font-size:13px;line-height:1.95;color:var(--text-soft);margin-top:6px}
+
+  /* ===== point cards (why us) ===== */
+  .points{display:flex;flex-direction:column;gap:18px}
+  .point{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:var(--shadow-sm)}
+  .point .pimg{height:158px;background-size:cover;background-position:center}
+  .point .pbody{padding:18px 20px 22px;position:relative}
+  .point .pno{position:absolute;top:-26px;right:18px;font-family:var(--font-en);font-style:italic;font-weight:600;font-size:52px;color:var(--primary);opacity:.9;line-height:1}
+  .point .pno small{font-size:18px;letter-spacing:.1em}
+  .point h3{font-family:var(--font-h);font-weight:700;font-size:18px;letter-spacing:.04em;color:var(--ink);line-height:1.5;padding-right:60px}
+  .point p{font-size:13px;line-height:1.95;color:var(--text-soft);margin-top:10px}
+
+  /* ===== menu ===== */
+  .menu-list{display:flex;flex-direction:column;gap:20px}
+  .mcard{background:#fff;border-radius:18px;overflow:hidden;box-shadow:var(--shadow-md);border:1px solid var(--line)}
+  .mcard .mimg{height:180px;background-size:cover;background-position:center;position:relative}
+  .mcard .mtag{position:absolute;top:12px;left:12px;background:rgba(43,36,32,.78);color:var(--gold-soft);font-size:10.5px;font-weight:700;letter-spacing:.1em;padding:4px 11px;border-radius:20px}
+  .mcard .mbody{padding:18px 20px 20px}
+  .mcard h3{font-family:var(--font-h);font-weight:700;font-size:18px;color:var(--ink);letter-spacing:.03em}
+  .mcard .men{font-family:var(--font-en);font-style:italic;font-size:13px;color:var(--primary);letter-spacing:.08em;margin-top:2px}
+  .mcard p{font-size:12.5px;line-height:1.9;color:var(--text-soft);margin-top:9px}
+  .mcard .mprice{margin-top:12px;padding-top:12px;border-top:1px dashed var(--line);display:flex;align-items:baseline;justify-content:space-between}
+  .mcard .mprice .lb{font-size:11px;color:var(--text-soft);font-weight:500}
+  .mcard .mprice .pp{font-family:var(--font-en);font-weight:600;font-size:24px;color:var(--primary-dark)}
+  .mcard .mprice .pp .yen{font-family:var(--font-b);font-size:13px;font-weight:700}
+
+  /* ===== reviews ===== */
+  .rev-score{text-align:center;margin-bottom:26px}
+  .rev-score .rn{font-family:var(--font-en);font-weight:600;font-size:60px;color:var(--primary-dark);line-height:.9}
+  .rev-score .rs{color:var(--gold);font-size:18px;letter-spacing:3px;margin-top:4px}
+  .rev-score .rc{font-size:12px;color:var(--text-soft);margin-top:4px;letter-spacing:.06em}
+  .review{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px 18px;box-shadow:var(--shadow-sm);margin-bottom:14px}
+  .review .rhead{display:flex;align-items:center;gap:11px;margin-bottom:10px}
+  .review .rav{width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,var(--blush),var(--primary-soft));display:flex;align-items:center;justify-content:center;font-family:var(--font-h);font-weight:700;color:var(--primary-dark);font-size:15px;flex:0 0 auto}
+  .review .rmeta b{font-size:13px;color:var(--ink)}
+  .review .rmeta span{display:block;font-size:11px;color:var(--text-soft)}
+  .review .rstar{color:var(--gold);font-size:11px;letter-spacing:1.5px;margin-left:auto}
+  .review .rtitle{font-family:var(--font-h);font-weight:700;font-size:14px;color:var(--primary-dark);margin-bottom:5px}
+  .review p{font-size:12.5px;line-height:1.9;color:var(--text)}
+
+  /* ===== flow ===== */
+  .flow{position:relative;padding-left:6px}
+  .flow .fitem{display:flex;gap:16px;padding-bottom:24px;position:relative}
+  .flow .fitem:not(:last-child)::before{content:"";position:absolute;left:17px;top:38px;bottom:-2px;width:2px;background:var(--line)}
+  .flow .fno{flex:0 0 auto;width:36px;height:36px;border-radius:50%;background:var(--primary);color:#fff;font-family:var(--font-en);font-weight:600;font-size:18px;display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow-sm);z-index:2}
+  .flow .fbody h3{font-family:var(--font-h);font-weight:700;font-size:16px;color:var(--ink);letter-spacing:.03em}
+  .flow .fbody p{font-size:12.5px;line-height:1.85;color:var(--text-soft);margin-top:5px}
+
+  /* ===== price box ===== */
+  .price-box{background:linear-gradient(170deg,#fff 0%,var(--bg-soft) 100%);border:1px solid var(--gold);border-radius:22px;padding:26px 22px 28px;box-shadow:var(--shadow-md);text-align:center;position:relative;overflow:hidden}
+  .price-box::before{content:"FIRST VISIT";position:absolute;top:14px;right:-34px;background:var(--primary);color:#fff;font-family:var(--font-en);font-size:11px;letter-spacing:.2em;padding:4px 40px;transform:rotate(45deg)}
+  .price-ribbon{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.12em;color:var(--primary-dark);border:1px solid var(--primary);border-radius:30px;padding:5px 18px}
+  .price-name{font-family:var(--font-h);font-weight:700;font-size:21px;color:var(--ink);margin-top:16px;letter-spacing:.03em;line-height:1.5}
+  .price-row{display:flex;align-items:baseline;justify-content:center;gap:12px;margin-top:14px}
+  .price-row .was{text-align:center}
+  .price-row .was .wl{font-size:10px;color:var(--text-soft);letter-spacing:.08em}
+  .price-row .was .wv{font-size:20px;color:var(--text-soft);text-decoration:line-through;text-decoration-color:var(--primary);font-family:var(--font-en);font-weight:500}
+  .price-row .arr{color:var(--primary);font-size:20px}
+  .price-row .now{text-align:center}
+  .price-row .now .nl{font-size:10px;color:var(--primary-dark);letter-spacing:.1em;font-weight:700}
+  .price-row .now .nv{font-family:var(--font-en);font-weight:600;color:var(--primary-dark);line-height:.85}
+  .price-row .now .nv .num{font-size:64px}
+  .price-row .now .nv .yen{font-family:var(--font-b);font-size:20px;font-weight:700}
+  .price-row .now .tax{font-size:11px;color:var(--text-soft);font-weight:500}
+  .price-incl{margin-top:18px;background:#fff;border:1px dashed var(--line);border-radius:12px;padding:14px 16px;text-align:left}
+  .price-incl .pi-t{font-size:11px;font-weight:700;color:var(--primary-dark);letter-spacing:.08em;margin-bottom:8px}
+  .price-incl ul{list-style:none;display:flex;flex-direction:column;gap:7px}
+  .price-incl li{font-size:12.5px;color:var(--text);display:flex;gap:8px;align-items:flex-start;line-height:1.6}
+  .price-incl li svg{width:14px;height:14px;stroke:var(--gold);flex:0 0 auto;margin-top:3px}
+  .price-limit{margin-top:14px;font-size:12px;color:var(--primary-dark);font-weight:700;letter-spacing:.04em}
+
+  /* subscription mini */
+  .submini{margin-top:18px;background:var(--ink);color:#fff;border-radius:16px;padding:18px 20px;text-align:center}
+  .submini .st{font-family:var(--font-en);font-style:italic;color:var(--gold-soft);font-size:14px;letter-spacing:.14em}
+  .submini .sh{font-family:var(--font-h);font-weight:700;font-size:16px;margin-top:4px;letter-spacing:.03em}
+  .submini .sp{font-size:12px;color:#d9ccc2;margin-top:8px;line-height:1.8}
+  .submini .sv{font-family:var(--font-en);font-weight:600;font-size:30px;color:var(--gold-soft);margin-top:6px}
+  .submini .sv .yen{font-family:var(--font-b);font-size:14px;font-weight:700}
+
+  /* ===== FAQ ===== */
+  .faq-item{border:1px solid var(--line);border-radius:14px;background:#fff;margin-bottom:11px;overflow:hidden;box-shadow:var(--shadow-sm)}
+  .faq-q{display:flex;align-items:center;gap:12px;padding:16px 18px;cursor:pointer;list-style:none}
+  .faq-q::-webkit-details-marker{display:none}
+  .faq-q .qm{font-family:var(--font-en);font-weight:600;font-style:italic;color:var(--primary);font-size:20px;flex:0 0 auto}
+  .faq-q .qt{font-size:13.5px;font-weight:500;color:var(--ink-2);line-height:1.6;flex:1}
+  .faq-q .qi{width:16px;height:16px;flex:0 0 auto;transition:transform .3s;stroke:var(--primary)}
+  details[open] .faq-q .qi{transform:rotate(45deg)}
+  .faq-a{padding:0 18px 18px 46px;font-size:12.5px;line-height:1.95;color:var(--text-soft)}
+
+  /* ===== store / access ===== */
+  .store{background:var(--ink);color:#fff;padding:50px 0 40px}
+  .store .eyebrow{color:var(--gold-soft)}
+  .store .sec-h{color:#fff}
+  .store-card{background:rgba(255,255,255,.04);border:1px solid rgba(191,161,104,.3);border-radius:16px;padding:6px 20px;margin-top:6px}
+  .store-row{display:flex;gap:14px;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.08)}
+  .store-row:last-child{border-bottom:none}
+  .store-row .sl{flex:0 0 78px;font-size:11px;color:var(--gold-soft);font-weight:700;letter-spacing:.08em;padding-top:2px}
+  .store-row .sv{font-size:13px;color:#f0e6dd;line-height:1.7}
+  .maplink{margin-top:18px;display:flex;align-items:center;gap:14px;background:rgba(255,255,255,.05);border:1px solid rgba(191,161,104,.35);border-radius:16px;padding:18px 18px;text-decoration:none}
+  .maplink .mpin{flex:0 0 auto;width:42px;height:42px;border-radius:50%;background:var(--gold);display:flex;align-items:center;justify-content:center}
+  .maplink .mpin svg{width:22px;height:22px;stroke:#fff;fill:none}
+  .maplink .mtxt b{display:block;font-size:13px;color:#fff;font-weight:700;letter-spacing:.04em}
+  .maplink .mtxt em{display:block;font-style:normal;font-size:11px;color:#cbbcb1;margin-top:3px;line-height:1.55}
+  .maplink .marr{margin-left:auto;color:var(--gold-soft);font-size:22px;flex:0 0 auto;line-height:1}
+
+  /* ===== closing CTA ===== */
+  .closing{background:#E6D4C9 url('images/treatment.png') center 30% / cover no-repeat;position:relative;padding:64px 26px 70px;text-align:center;color:#fff}
+  .closing::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(43,36,32,.55),rgba(43,36,32,.78))}
+  .closing .inner{position:relative;z-index:2}
+  .closing .eyebrow{color:var(--gold-soft)}
+  .closing h2{font-family:var(--font-h);font-weight:700;font-size:25px;line-height:1.7;letter-spacing:.05em;margin-top:8px;text-shadow:0 2px 16px rgba(0,0,0,.4)}
+  .closing h2 .mk{color:var(--gold-soft)}
+  .closing .cp{font-size:13px;line-height:2.0;color:#f0e6dd;margin-top:16px}
+
+  /* ===== footer ===== */
+  .ft{background:var(--ink-2);color:#cbbcb1;text-align:center;padding:34px 26px 110px}
+  .ft .fb{font-family:var(--font-en);font-style:italic;font-size:26px;letter-spacing:.16em;color:var(--gold-soft)}
+  .ft .fl{font-size:10.5px;letter-spacing:.32em;color:var(--primary);margin-top:6px}
+  .ft .fmeta{font-size:11px;line-height:1.9;margin-top:18px;color:#a89a8f}
+  .ft .fsns{display:flex;gap:14px;justify-content:center;margin-top:18px}
+  .ft .fsns a{color:#cbbcb1;font-size:11px;letter-spacing:.1em;text-decoration:none;border:1px solid rgba(191,161,104,.3);border-radius:30px;padding:7px 16px}
+  .ft .cpy{font-size:10px;color:#6f6258;margin-top:22px;letter-spacing:.06em}
+
+  /* ===== fixed bottom CTA ===== */
+  .dock{position:fixed;left:0;right:0;bottom:0;z-index:80;display:flex;justify-content:center;pointer-events:none}
+  .dock-in{max-width:var(--maxw);width:100%;background:rgba(250,246,241,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+    border-top:1px solid var(--line);box-shadow:0 -8px 26px rgba(43,36,32,.14);padding:9px 14px 12px;display:flex;gap:9px;align-items:center;pointer-events:auto}
+  .dock-price{flex:0 0 auto;text-align:center;line-height:1.05}
+  .dock-price .dl{font-size:8.5px;color:var(--text-soft);letter-spacing:.04em;font-weight:500}
+  .dock-price .dv{font-family:var(--font-en);font-weight:600;font-size:25px;color:var(--primary-dark)}
+  .dock-price .dv .yen{font-family:var(--font-b);font-size:11px;font-weight:700}
+  .dock a.dline{flex:1;display:flex;align-items:center;justify-content:center;gap:7px;background:linear-gradient(180deg,#1ed760,var(--cta) 60%,var(--cta-dark));color:#fff;font-weight:700;font-size:15px;letter-spacing:.04em;padding:13px;border-radius:40px;text-decoration:none;box-shadow:0 8px 18px rgba(6,199,85,.36)}
+  .dock a.dline .ic{width:19px;height:19px}
+
+  @media(min-width:430px){.hero-h{font-size:33px}.hero-h .big{font-size:41px}}
+</style>
+</head>
+<body>
+<div class="shell">
+
+  <!-- ===== STICKY OFFER BAR ===== -->
+  <div class="topbar">
+    <div class="tb-l">The Pearls</div>
+    <div class="tb-r">初回ツヤ肌ワックス体験 <b class="y">¥8,800</b><br>神戸三宮・韓国肌管理</div>
+  </div>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero-top">
+      <div class="hero-brand">The Pearls</div>
+      <div class="hero-loc">KOBE SANNOMIYA ・ KOREAN SKIN CARE</div>
+      <span class="hero-cat">韓国肌管理 / フェイシャルワックス専門</span>
+      <h1 class="hero-h">毛穴・くすみ・乾燥に。<br>韓国肌管理で、<br><span class="big mk">“素肌”</span>から変わる。</h1>
+    </div>
+    <div class="hero-bottom">
+      <div class="hero-offer">
+        <div class="ho-line"><span class="ho-tag">初回限定</span>顔のツヤ肌ワックス 体験</div>
+        <div class="ho-price"><span class="was">通常¥9,800</span><span class="arr">▶</span><b>8,800</b><span class="yen">円</span><small>税込</small></div>
+        <div class="ho-trust">肩・ヘッドマッサージ付／無理な勧誘なし・都度払いOK</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BADGE BAR ===== -->
+  <section class="badges">
+    <div class="badge"><div class="bn">4.66</div><div class="stars">★★★★★</div><div class="bl">口コミ評価（248件）</div></div>
+    <div class="badge"><div class="bn">徒歩<small>5分</small></div><div class="bl">JR・阪急 三ノ宮駅</div></div>
+    <div class="badge"><div class="bn">勧誘<small>0</small></div><div class="bl">都度払いOK・初心者歓迎</div></div>
+    <div class="badge"><div class="bn">女性<small>専用</small></div><div class="bl">完全予約制・全員女性スタッフ</div></div>
+  </section>
+
+  <!-- ===== PROBLEM (image band) ===== -->
+  <section class="band short" style="background-image:url('images/skin.png')">
+    <div class="band-in">
+      <span class="eyebrow">Your Skin Worries</span>
+      <h2 class="band-h">そのお肌の不調、<br><span class="mk">“年齢のせい”</span>ではありません。</h2>
+      <p class="band-p">毎日きちんとケアしているのに、なぜか変わらない。<br>その原因は、肌の表面に積もった「古い角質」と「うぶ毛」かもしれません。</p>
+    </div>
+  </section>
+
+  <section class="blk pearl">
+    <div class="pad">
+      <div class="sec-head rv">
+        <span class="eyebrow">Check List</span>
+        <div class="hr-orn"><span></span></div>
+        <h2 class="sec-h">こんなお悩み、<br>ありませんか？</h2>
+      </div>
+      <div class="worry-list">
+        <div class="worry rv"><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span><p>毛穴の黒ずみ・開きが<b>メイクでも隠せない</b></p></div>
+        <div class="worry rv"><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span><p>肌がくすんで<b>顔色が暗く</b>見える</p></div>
+        <div class="worry rv"><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span><p>乾燥・ごわつきで<b>化粧ノリが悪い</b></p></div>
+        <div class="worry rv"><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span><p>うぶ毛で<b>肌がワントーン暗く</b>見える</p></div>
+        <div class="worry rv"><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span><p>スキンケアを変えても<b>効果を感じない</b></p></div>
+        <div class="worry rv"><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span><p>大切な日までに<b>透明感のある肌</b>になりたい</p></div>
+      </div>
+      <p class="worry-foot rv">1つでも当てはまるなら、<br><span class="em">韓国肌管理</span>が答えになります。</p>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION 1 : why ===== -->
+  <section class="blk soft">
+    <div class="pad">
+      <div class="sec-head rv">
+        <span class="eyebrow gold">Why it doesn't change</span>
+        <div class="hr-orn"><span></span></div>
+        <h2 class="sec-h">なぜ、自己流ケアでは<br>肌は変わらないの？</h2>
+      </div>
+      <p class="edu-q rv"><span class="u">高い化粧水を使っても浸透しない</span>のには、理由があります。</p>
+      <p class="edu-body rv">肌の表面には、約28日周期で生まれ変わる「角質」があります。ところが年齢や乾燥、紫外線で<b>ターンオーバーが乱れる</b>と、古い角質が剥がれずに肌の上に積み重なっていきます。<br><br>すると——どんなに良い美容成分も、<b>分厚い角質に弾かれて奥まで届きません。</b>さらに、顔のうぶ毛が光を乱反射させ、肌をくすんで見せてしまう。これが「ケアしているのに変わらない」の正体です。</p>
+      <div class="keybox rv">
+        <div class="kt">必要なのは“足す”より“整える”こと</div>
+        <div class="kp">まずは肌に積もった古い角質とうぶ毛を、プロの手でやさしくオフする。土台が整って初めて、スキンケアもメイクも本来の力を発揮します。The Pearlsの肌管理は、この「土台づくり」から始めます。</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION 2 : what is korean skin care (image band) ===== -->
+  <section class="band" style="background-image:url('images/treatment.png')">
+    <div class="band-in">
+      <span class="eyebrow">What is Korean Skin Care</span>
+      <h2 class="band-h"><span class="mk">韓国肌管理</span>とは、<br>“肌そのもの”を育てる技術。</h2>
+      <p class="band-p">韓国で生まれた「肌管理（ピブクァンリ）」は、エステの気持ちよさだけでなく、肌のコンディションを根本から整える美容法。The Pearlsは韓国の専用機器を導入し、本場のメソッドを神戸で受けられます。</p>
+    </div>
+  </section>
+
+  <!-- ===== MENU ===== -->
+  <section class="blk pearl">
+    <div class="pad">
+      <div class="sec-head rv">
+        <span class="eyebrow">Signature Menu</span>
+        <div class="hr-orn"><span></span></div>
+        <h2 class="sec-h">素肌が変わる、<br>3つの肌管理メニュー</h2>
+        <p class="lead" style="margin-top:10px">全メニューに<b style="color:var(--primary-dark)">肩・ヘッドマッサージ付き</b>。<br>あなたの肌悩みに合わせてご提案します。</p>
+      </div>
+      <div class="menu-list">
+        <div class="mcard rv">
+          <div class="mimg" style="background-image:url('images/skin.png')"><span class="mtag">人気No.1</span></div>
+          <div class="mbody">
+            <h3>顔のツヤ肌ワックス</h3>
+            <div class="men">Facial Wax</div>
+            <p>専用ワックスでうぶ毛と古い角質を一度にオフ。施術直後から、自分の肌とは思えない<b style="color:var(--primary-dark)">ツヤ・透明感・化粧ノリ</b>を実感。肌のトーンが一段明るくなります。</p>
+            <div class="mprice"><span class="lb">初回体験（通常¥9,800）</span><span class="pp"><span class="yen">¥</span>8,800</span></div>
+          </div>
+        </div>
+        <div class="mcard rv">
+          <div class="mimg" style="background-image:url('images/products.png')"><span class="mtag">毛穴・ハリ</span></div>
+          <div class="mbody">
+            <h3>ハーブピーリング</h3>
+            <div class="men">Herb Peeling</div>
+            <p>天然ハーブの力で肌の生まれ変わりを促進。毛穴・ニキビ跡・ハリ不足にアプローチし、内側から押し上げるような<b style="color:var(--primary-dark)">なめらかな肌</b>へ。赤みが出にくい施術です。</p>
+            <div class="mprice"><span class="lb">初回クーポン例</span><span class="pp"><span class="yen">¥</span>9,900〜</span></div>
+          </div>
+        </div>
+        <div class="mcard rv">
+          <div class="mimg" style="background-image:url('images/treatment.png')"><span class="mtag">うるおい・鎮静</span></div>
+          <div class="mbody">
+            <h3>韓国 白玉酸素セラピー</h3>
+            <div class="men">White Oxygen Therapy</div>
+            <p>高濃度の酸素と美容液を肌の奥へ届け、くすみを払って<b style="color:var(--primary-dark)">白玉のような透明感</b>へ。乾燥・ゆらぎ肌の鎮静にも。ワックスとの組み合わせが人気です。</p>
+            <div class="mprice"><span class="lb">セット体験例</span><span class="pp"><span class="yen">¥</span>13,200〜</span></div>
+          </div>
+        </div>
+      </div>
+      <p class="lead center rv" style="margin-top:20px;font-size:12.5px">※ブライダルエステ・背中ハーブピーリングなど、目的に合わせた多彩なメニューをご用意。カウンセリングで最適なプランをご提案します。</p>
+    </div>
+  </section>
+
+  <!-- ===== WHY US (points) ===== -->
+  <section class="blk accent">
+    <div class="pad">
+      <div class="sec-head rv">
+        <span class="eyebrow gold">Why The Pearls</span>
+        <div class="hr-orn"><span></span></div>
+        <h2 class="sec-h">The Pearlsが<br>選ばれる理由</h2>
+      </div>
+      <div class="points">
+        <div class="point rv">
+          <div class="pimg" style="background-image:url('images/interior.png')"></div>
+          <div class="pbody"><div class="pno"><small>No.</small>1</div>
+            <h3>韓国本場の機器と技術</h3>
+            <p>美容オタクのスタッフが厳選した韓国の専用機器とメソッドを導入。本場の肌管理を、神戸三宮で受けられます。</p>
+          </div>
+        </div>
+        <div class="point rv">
+          <div class="pimg" style="background-image:url('images/products.png')"></div>
+          <div class="pbody"><div class="pno"><small>No.</small>2</div>
+            <h3>無理な勧誘は一切なし</h3>
+            <p>高額コースの押し売りはしません。都度払い・回数券から選べるので、初めてのエステでも安心して通えます。</p>
+          </div>
+        </div>
+        <div class="point rv">
+          <div class="pimg" style="background-image:url('images/treatment.png')"></div>
+          <div class="pbody"><div class="pno"><small>No.</small>3</div>
+            <h3>全メニューにマッサージ付</h3>
+            <p>すべての施術に肩・ヘッドマッサージが付いて、心からリラックス。肌だけでなく、頑張る毎日もほぐします。</p>
+          </div>
+        </div>
+        <div class="point rv">
+          <div class="pimg" style="background-image:url('images/skin.png')"></div>
+          <div class="pbody"><div class="pno"><small>No.</small>4</div>
+            <h3>“続く美肌”まで導く</h3>
+            <p>施術だけで終わらせません。生活習慣やおうちスキンケアのアドバイスまで。サロンを出た後も、きれいが続きます。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== REVIEWS ===== -->
+  <section class="blk pearl">
+    <div class="pad">
+      <div class="sec-head rv">
+        <span class="eyebrow">Customer Voice</span>
+        <div class="hr-orn"><span></span></div>
+        <h2 class="sec-h">SNSで話題、<br>口コミで広がる実感</h2>
+      </div>
+      <div class="rev-score rv">
+        <div class="rn">4.66</div>
+        <div class="rs">★★★★★</div>
+        <div class="rc">ホットペッパービューティー 口コミ248件</div>
+      </div>
+      <div class="review rv">
+        <div class="rhead"><div class="rav">M</div><div class="rmeta"><b>M.K さん</b><span>20代・会社員</span></div><div class="rstar">★★★★★</div></div>
+        <div class="rtitle">施術後、肌が自分のじゃないみたい</div>
+        <p>ワックスのあと、頬を触ったらツルツルで感動しました。次の日のメイクのりが全然違って、ファンデが少なくて済むように。カウンセリングも丁寧で安心でした。</p>
+      </div>
+      <div class="review rv">
+        <div class="rhead"><div class="rav">A</div><div class="rmeta"><b>A.S さん</b><span>30代・ブライダル前</span></div><div class="rstar">★★★★★</div></div>
+        <div class="rtitle">結婚式前に通って大正解</div>
+        <p>くすみが気になっていましたが、回を重ねるごとに透明感が出てきました。痛みも声をかけてくださるので不安なし。式当日、肌を褒められて本当に嬉しかったです。</p>
+      </div>
+      <div class="review rv">
+        <div class="rhead"><div class="rav">Y</div><div class="rmeta"><b>Y.T さん</b><span>40代・主婦</span></div><div class="rstar">★★★★★</div></div>
+        <div class="rtitle">勧誘がないから通いやすい</div>
+        <p>エステ初心者で緊張していましたが、無理な勧誘がまったくなくて拍子抜け。都度払いで自分のペースで通えます。店内も清潔で、毎回癒やされています。</p>
+      </div>
+      <p class="lead center rv" style="font-size:12px;margin-top:10px">※個人の感想であり、効果には個人差があります。</p>
+    </div>
+  </section>
+
+  <!-- ===== PRICE / OFFER ===== -->
+  <section class="blk soft" id="offer">
+    <div class="pad">
+      <div class="sec-head rv">
+        <span class="eyebrow gold">First Visit Offer</span>
+        <div class="hr-orn"><span></span></div>
+        <h2 class="sec-h">まずは、この一回で<br>“ツヤ肌”を体感して。</h2>
+      </div>
+      <div class="price-box rv">
+        <span class="price-ribbon">初めての方限定クーポン</span>
+        <div class="price-name">顔のツヤ肌ワックス 体験</div>
+        <div class="price-row">
+          <div class="was"><div class="wl">通常価格</div><div class="wv">¥9,800</div></div>
+          <div class="arr">▶</div>
+          <div class="now"><div class="nl">初回限定</div><div class="nv"><span class="num">8,800</span><span class="yen">円</span></div><div class="tax">税込</div></div>
+        </div>
+        <div class="price-incl">
+          <div class="pi-t">体験に含まれるもの</div>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>カウンセリング＆肌診断</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>顔のツヤ肌ワックス施術</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>肩・ヘッドマッサージ</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>ホームケア・スキンケアのアドバイス</li>
+          </ul>
+        </div>
+        <div class="price-limit">完全予約制・お席に限りがございます</div>
+        <a class="cta-line" href="https://line.me/R/ti/p/@380whsqu" target="_blank" rel="noopener">
+          <svg class="ic" viewBox="0 0 24 24" fill="#fff"><path d="M12 2C6.5 2 2 5.7 2 10.2c0 4 3.6 7.4 8.5 8.1.3.07.8.2.9.5.08.27.05.7.03.97l-.14.86c-.04.27-.2 1.05.92.57s6.04-3.56 8.24-6.1C21.4 13.5 22 11.9 22 10.2 22 5.7 17.5 2 12 2z"/></svg>
+          <span>LINEで¥8,800体験を予約<small>友だち追加して、希望日を送るだけ</small></span>
+        </a>
+        <a class="cta-sub" href="https://beauty.hotpepper.jp/kr/slnH000706469/" target="_blank" rel="noopener">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+          ホットペッパーでネット予約
+        </a>
+      </div>
+
+      <div class="submini rv">
+        <div class="st">For Continuing</div>
+        <div class="sh">続けたい方へ｜サブスクプラン</div>
+        <div class="sp">月2回の施術＋ホームケア割引付き。<br>都度払いより、ぐっとお得に“続く美肌”を。</div>
+        <div class="sv">月額<span class="yen">¥</span>19,800<span style="font-family:var(--font-b);font-size:12px;font-weight:500">〜</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FLOW ===== -->
+  <section class="blk pearl">
+    <div class="pad">
+      <div class="sec-head rv">
+        <span class="eyebrow">First Visit Flow</span>
+        <div class="hr-orn"><span></span></div>
+        <h2 class="sec-h">初めての方の<br>当日の流れ</h2>
+      </div>
+      <div class="flow">
+        <div class="fitem rv"><div class="fno">1</div><div class="fbody"><h3>ご予約・ご来店</h3><p>LINEまたはネットでご予約。三ノ宮駅から徒歩5分、ピンクの入口が目印です。</p></div></div>
+        <div class="fitem rv"><div class="fno">2</div><div class="fbody"><h3>カウンセリング＆肌診断</h3><p>お悩みや肌の状態をじっくりヒアリング。一人ひとりに合った施術をご提案します。</p></div></div>
+        <div class="fitem rv"><div class="fno">3</div><div class="fbody"><h3>施術（ツヤ肌ワックス）</h3><p>声をかけながら、やさしく丁寧に。肩・ヘッドマッサージで心までリラックス。</p></div></div>
+        <div class="fitem rv"><div class="fno">4</div><div class="fbody"><h3>仕上がり確認＆アドバイス</h3><p>その場で変化を実感。おうちでのケア方法もお伝えします。メイクルームもご利用ください。</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="blk soft">
+    <div class="pad">
+      <div class="sec-head rv">
+        <span class="eyebrow gold">Q &amp; A</span>
+        <div class="hr-orn"><span></span></div>
+        <h2 class="sec-h">よくあるご質問</h2>
+      </div>
+      <details class="faq-item rv"><summary class="faq-q"><span class="qm">Q</span><span class="qt">エステは初めてで緊張します。大丈夫ですか？</span><svg class="qi" viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></summary><div class="faq-a">もちろん大丈夫です。お客様の多くがエステ初心者の方。無理な勧誘は一切なく、都度払いも可能なので、どうぞ気軽にお越しください。</div></details>
+      <details class="faq-item rv"><summary class="faq-q"><span class="qm">Q</span><span class="qt">痛みやダウンタイムはありますか？</span><svg class="qi" viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></summary><div class="faq-a">こまめにお声がけしながら施術するのでご安心ください。ワックスは赤みが出にくく、施術後すぐにメイクして帰られる方がほとんどです。</div></details>
+      <details class="faq-item rv"><summary class="faq-q"><span class="qm">Q</span><span class="qt">どのくらいのペースで通えばいい？</span><svg class="qi" viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></summary><div class="faq-a">肌の状態や目的によって異なります。まずは体験で肌の変化を感じていただき、あなたに合ったペースをカウンセリングでご提案します。</div></details>
+      <details class="faq-item rv"><summary class="faq-q"><span class="qm">Q</span><span class="qt">ブライダル前でも間に合いますか？</span><svg class="qi" viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></summary><div class="faq-a">ブライダルエステも得意としています。挙式までのスケジュールに合わせたプランをご提案。無料カウンセリングもございますのでお早めにご相談ください。</div></details>
+      <details class="faq-item rv"><summary class="faq-q"><span class="qm">Q</span><span class="qt">支払い方法は何が使えますか？</span><svg class="qi" viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></summary><div class="faq-a">各種クレジットカード・QRコード決済に対応しています。都度払い・回数券・サブスクからお選びいただけます。</div></details>
+    </div>
+  </section>
+
+  <!-- ===== STORE / ACCESS ===== -->
+  <section class="store">
+    <div class="pad">
+      <div class="sec-head rv">
+        <span class="eyebrow">Salon Information</span>
+        <div class="hr-orn"><span></span></div>
+        <h2 class="sec-h">店舗情報・アクセス</h2>
+      </div>
+      <div class="store-card rv">
+        <div class="store-row"><div class="sl">店名</div><div class="sv">The Pearls（ザ パールズ）<br>韓国肌管理 / フェイシャルワックス専門</div></div>
+        <div class="store-row"><div class="sl">住所</div><div class="sv">兵庫県神戸市中央区下山手通2-4-10<br>新道三光ビル 4F</div></div>
+        <div class="store-row"><div class="sl">アクセス</div><div class="sv">JR・阪急「三ノ宮」駅 西口より徒歩5分<br>生田新道商店街沿い・ピンクの入口が目印</div></div>
+        <div class="store-row"><div class="sl">営業時間</div><div class="sv">10:00〜20:00（最終受付 18:30）</div></div>
+        <div class="store-row"><div class="sl">定休日</div><div class="sv">水曜日</div></div>
+        <div class="store-row"><div class="sl">ご予約</div><div class="sv">完全予約制／LINE・ネット予約（24時間受付）<br>女性専用・2名様以上のご来店もOK</div></div>
+      </div>
+      <a class="maplink rv" href="https://www.google.com/maps/search/?api=1&query=%E5%85%B5%E5%BA%AB%E7%9C%8C%E7%A5%9E%E6%88%B8%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E4%B8%8B%E5%B1%B1%E6%89%8B%E9%80%9A2-4-10%20%E6%96%B0%E9%81%93%E4%B8%89%E5%85%89%E3%83%93%E3%83%AB" target="_blank" rel="noopener">
+        <span class="mpin"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+        <span class="mtxt"><b>Googleマップでアクセスを見る</b><em>兵庫県神戸市中央区下山手通2-4-10 新道三光ビル4F</em></span>
+        <span class="marr">›</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== CLOSING CTA ===== -->
+  <section class="closing">
+    <div class="inner">
+      <span class="eyebrow">Your skin, reborn.</span>
+      <h2>鏡を見るのが、<br><span class="mk">楽しみになる毎日</span>へ。</h2>
+      <p class="cp">「もっと早く来ればよかった」——そう言っていただけるように。<br>あなたの素肌が変わる第一歩を、The Pearlsで。</p>
+      <a class="cta-line" style="margin-top:22px" href="https://line.me/R/ti/p/@380whsqu" target="_blank" rel="noopener">
+        <svg class="ic" viewBox="0 0 24 24" fill="#fff"><path d="M12 2C6.5 2 2 5.7 2 10.2c0 4 3.6 7.4 8.5 8.1.3.07.8.2.9.5.08.27.05.7.03.97l-.14.86c-.04.27-.2 1.05.92.57s6.04-3.56 8.24-6.1C21.4 13.5 22 11.9 22 10.2 22 5.7 17.5 2 12 2z"/></svg>
+        <span>初回¥8,800の体験を予約する<small>LINEで友だち追加・かんたん予約</small></span>
+      </a>
+      <a class="cta-sub" href="https://beauty.hotpepper.jp/kr/slnH000706469/" target="_blank" rel="noopener" style="background:rgba(255,255,255,.95)">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+        ネット予約はこちら
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="ft">
+    <div class="fb">The Pearls</div>
+    <div class="fl">KOBE SANNOMIYA</div>
+    <div class="fmeta">韓国肌管理 / フェイシャルワックス専門サロン<br>兵庫県神戸市中央区下山手通2-4-10 新道三光ビル4F<br>10:00〜20:00（最終受付18:30）／水曜定休</div>
+    <div class="fsns">
+      <a href="https://www.instagram.com/thepearls_beauty/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://line.me/R/ti/p/@380whsqu" target="_blank" rel="noopener">LINE @380whsqu</a>
+    </div>
+    <div class="cpy">© The Pearls. All Rights Reserved.</div>
+  </footer>
+
+  <!-- ===== FIXED BOTTOM DOCK ===== -->
+  <div class="dock">
+    <div class="dock-in">
+      <div class="dock-price"><div class="dl">初回体験</div><div class="dv"><span class="yen">¥</span>8,800</div></div>
+      <a class="dline" href="https://line.me/R/ti/p/@380whsqu" target="_blank" rel="noopener">
+        <svg class="ic" viewBox="0 0 24 24" fill="#fff"><path d="M12 2C6.5 2 2 5.7 2 10.2c0 4 3.6 7.4 8.5 8.1.3.07.8.2.9.5.08.27.05.7.03.97l-.14.86c-.04.27-.2 1.05.92.57s6.04-3.56 8.24-6.1C21.4 13.5 22 11.9 22 10.2 22 5.7 17.5 2 12 2z"/></svg>
+        LINEで体験を予約
+      </a>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  // reveal on scroll
+  const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12});
+  document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+  // hide dock when footer in view
+  const ft=document.querySelector('.ft'),dock=document.querySelector('.dock');
+  const io2=new IntersectionObserver((es)=>{es.forEach(e=>{dock.style.opacity=e.isIntersecting?'0':'1';dock.style.transform=e.isIntersecting?'translateY(100%)':'none';});},{threshold:.05});
+  io2.observe(ft);
+  dock.style.transition='opacity .4s, transform .4s';
+</script>
+</body>
+</html>

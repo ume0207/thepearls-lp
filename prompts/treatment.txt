@@ -1,0 +1,28 @@
+あなたは画像生成タスクを実行します。確認質問は一切せず、いきなり実行してください。
+
+利用可能な image_generation ツールを使って下記プロンプトで画像を1枚生成し、生成後 /Users/ume/Desktop/thepearls-lp/images/treatment.png にコピー保存してください。
+
+プロンプト（英語、改変せず使用）:
+A calm, luxurious photograph of a young East Asian (Japanese) woman lying down relaxed receiving a premium facial treatment at a high-end esthetic salon, vertical 3:4 composition.
+
+SUBJECT:
+- The woman lies on a treatment bed with eyes gently closed, completely relaxed and peaceful, a soft towel wrapped around her hair, glowing healthy radiant skin.
+- The clean soft hands of an esthetician gently applying a smooth white modeling mask or gently working near her face.
+
+STYLE & MOOD:
+- Serene, soft, premium spa, editorial beauty photography, soft diffused warm light, tranquil and refined.
+
+COLOR PALETTE (strictly):
+- Pearl white #F7F1EC, soft blush pink #E8C7C8, warm champagne beige #E3D2BE, warm cream.
+
+COMPOSITION:
+- Soft negative space for text overlay.
+- Vertical 3:4 aspect ratio.
+
+CRITICAL CONSTRAINTS:
+- Vertical 3:4 portrait orientation.
+- Photorealistic, NOT illustration, NOT 3D render, NOT cartoon.
+- NO text, NO letters, NO logos, NO watermark.
+- Natural realistic skin texture, calm and elegant.
+
+完了したらコピー先パスを最終メッセージとして1行で出力してください。

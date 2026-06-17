@@ -1,0 +1,28 @@
+あなたは画像生成タスクを実行します。確認質問は一切せず、いきなり実行してください。
+
+利用可能な image_generation ツールを使って下記プロンプトで画像を1枚生成し、生成後 /Users/ume/Desktop/thepearls-lp/images/products.png にコピー保存してください。
+
+プロンプト（英語、改変せず使用）:
+A refined, luxurious top-down flat-lay photograph of premium Korean skincare and esthetic ingredients, vertical 3:4 composition, for a skin-management salon landing page section. NO human, NO face.
+
+SUBJECT:
+- An elegant arrangement on a soft pearl-cream linen surface: minimalist unbranded amber and frosted-glass skincare bottles and droppers, a small dish of soft green herbal powder (herb peeling), delicate dried botanicals, a folded soft towel, soft pearls scattered, fresh green leaves, a smooth ceramic bowl with cream.
+- Tidy, balanced, spa-like, expensive-looking still life.
+
+STYLE & MOOD:
+- Soft, clean, premium editorial still-life photography, soft diffused natural light, gentle shadows, sophisticated and feminine.
+
+COLOR PALETTE (strictly):
+- Pearl white #F7F1EC, soft blush pink #E8C7C8, warm champagne beige #E3D2BE, champagne gold accents, soft sage green for the herbs.
+
+COMPOSITION:
+- Top-down flat lay, some soft negative space for text overlay.
+- Vertical 3:4 aspect ratio.
+
+CRITICAL CONSTRAINTS:
+- Vertical 3:4 portrait orientation.
+- Photorealistic, NOT illustration, NOT 3D render, NOT cartoon.
+- NO text, NO letters, NO brand logos, NO watermark.
+- NO human, NO hands, NO face.
+
+完了したらコピー先パスを最終メッセージとして1行で出力してください。

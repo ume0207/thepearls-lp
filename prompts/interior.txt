@@ -1,0 +1,28 @@
+あなたは画像生成タスクを実行します。確認質問は一切せず、いきなり実行してください。
+
+利用可能な image_generation ツールを使って下記プロンプトで画像を1枚生成し、生成後 /Users/ume/Desktop/thepearls-lp/images/interior.png にコピー保存してください。
+
+プロンプト（英語、改変せず使用）:
+A sophisticated, serene interior photograph of a high-end Korean skin-management facial esthetic salon private treatment room, vertical 3:4 composition, for a landing page section.
+
+SCENE:
+- An elegant private esthetic treatment room with a clean treatment bed draped in soft cream linen, neatly folded soft towels, a small side table holding minimalist skincare bottles and a single white orchid or soft dried pampas grass in a vase.
+- Soft warm ambient indirect lighting, a calm tranquil spa atmosphere, minimal, tidy, luxurious yet cozy.
+
+STYLE & MOOD:
+- Clean minimal premium spa, editorial interior photography, warm and inviting, sophisticated and feminine.
+
+COLOR PALETTE (strictly):
+- Pearl white #F7F1EC, warm beige #E3D2BE, soft greige #D9CBBF, champagne gold accents, cream.
+
+COMPOSITION:
+- Wide enough to show the inviting room, soft negative space for text overlay.
+- Vertical 3:4 aspect ratio.
+
+CRITICAL CONSTRAINTS:
+- Vertical 3:4 portrait orientation.
+- Photorealistic, NOT illustration, NOT 3D render, NOT cartoon.
+- NO text, NO letters, NO logos, NO watermark.
+- Realistic, well composed, clean.
+
+完了したらコピー先パスを最終メッセージとして1行で出力してください。

@@ -1,0 +1,35 @@
+あなたは画像生成タスクを実行します。確認質問は一切せず、いきなり実行してください。
+
+利用可能な image_generation ツールを使って下記プロンプトで画像を1枚生成し、生成後 /Users/ume/Desktop/thepearls-lp/images/hero.png にコピー保存してください。
+
+プロンプト（英語、改変せず使用）:
+A luxurious, editorial beauty photograph, vertical 3:4 portrait composition, for the hero section of a high-end Korean skin-management facial esthetic salon landing page.
+
+SUBJECT:
+- A beautiful East Asian (Japanese) woman in her late 20s to early 30s, natural elegant beauty, flawless luminous "glass skin" with a soft dewy healthy glow.
+- Serene, calm, confident expression, eyes softly looking toward the camera, gentle and refined.
+- Soft natural makeup, bare shoulders softly wrapped in a soft cream towel or robe as if at a premium spa.
+- One hand gently touching her cheek or jawline, showing smooth radiant skin.
+
+STYLE & MOOD:
+- High-end beauty magazine editorial, soft and clean, sophisticated and feminine.
+- Soft diffused studio lighting, gentle highlights on the skin, airy and bright.
+- Shallow depth of field, smooth creamy out-of-focus background.
+
+COLOR PALETTE (strictly):
+- Pearl white #F7F1EC, soft blush pink #E8C7C8, warm champagne beige #E3D2BE, soft greige #D9CBBF, muted rose-gold accents.
+- Overall warm, soft, luxurious, low-saturation elegant tones.
+
+COMPOSITION:
+- The woman positioned in the lower two-thirds of the frame.
+- Clean, empty, softly blurred negative space in the upper third for text overlay.
+- Vertical 3:4 aspect ratio.
+
+CRITICAL CONSTRAINTS:
+- Vertical 3:4 portrait orientation.
+- Photorealistic, NOT illustration, NOT 3D render, NOT cartoon, NOT anime.
+- NO text, NO letters, NO logos, NO watermark anywhere in the image.
+- Keep the upper third clean and uncluttered for text overlay.
+- Natural realistic skin texture, no plastic or over-smoothed look.
+
+完了したらコピー先パスを最終メッセージとして1行で出力してください。

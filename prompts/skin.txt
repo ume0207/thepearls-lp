@@ -1,0 +1,29 @@
+あなたは画像生成タスクを実行します。確認質問は一切せず、いきなり実行してください。
+
+利用可能な image_generation ツールを使って下記プロンプトで画像を1枚生成し、生成後 /Users/ume/Desktop/thepearls-lp/images/skin.png にコピー保存してください。
+
+プロンプト（英語、改変せず使用）:
+A clean, luxurious macro beauty photograph, vertical 3:4 composition, for a Korean skin-management salon landing page section.
+
+SUBJECT:
+- Extreme close-up of a young East Asian woman's face focusing on a flawless, dewy, glowing cheek and jawline with smooth "glass skin" texture, fine luminous skin, healthy radiance and translucency.
+- A soft clean facial brush or a delicate gloved esthetician fingertip gently touching the skin.
+
+STYLE & MOOD:
+- Soft, clean, premium spa, editorial beauty close-up.
+- Soft diffused light, fresh hydrated radiant look, calm and refined.
+
+COLOR PALETTE (strictly):
+- Pearl white #F7F1EC, soft blush pink #E8C7C8, warm champagne beige #E3D2BE, soft cream tones.
+
+COMPOSITION:
+- Macro close-up, shallow depth of field, soft negative space on one side for text overlay.
+- Vertical 3:4 aspect ratio.
+
+CRITICAL CONSTRAINTS:
+- Vertical 3:4 portrait orientation.
+- Photorealistic, NOT illustration, NOT 3D render, NOT cartoon.
+- NO text, NO letters, NO logos, NO watermark.
+- Realistic natural skin texture with pores, not plastic, not over-retouched.
+
+完了したらコピー先パスを最終メッセージとして1行で出力してください。
