@@ -8,7 +8,7 @@
 <meta property="og:title" content="The Pearls｜神戸三宮の韓国肌管理サロン｜初回ツヤ肌ワックス体験8,800円">
 <meta property="og:description" content="毛穴・くすみ・乾燥に、韓国肌管理で“素肌から変わる”。無理な勧誘なし・都度払いOK。三ノ宮駅徒歩5分。">
 <meta property="og:type" content="website">
-<meta property="og:image" content="images/hero.png">
+<meta property="og:image" content="images/r_hero_poster.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -74,12 +74,13 @@
   .rv.in{opacity:1;transform:none}
 
   /* HERO */
-  .hero{min-height:calc(100svh - 52px);background:#E6D4C9 url('images/hero.png') center 28% / cover no-repeat;
-    display:flex;flex-direction:column;justify-content:space-between;position:relative;}
-  .hero::before{content:"";position:absolute;inset:0;
-    background:linear-gradient(180deg,rgba(250,246,241,.62) 0%,rgba(250,246,241,.10) 26%,rgba(43,36,32,0) 48%,rgba(43,36,32,.30) 78%,rgba(43,36,32,.74) 100%);}
-  .hero-top{position:relative;z-index:2;padding:20px 26px 0;text-align:center}
-  .hero-brand{font-family:var(--font-en);font-style:italic;font-weight:500;font-size:28px;letter-spacing:.16em;color:var(--ink);line-height:1}
+  .hero{min-height:calc(100svh - 52px);background:#E6D4C9;
+    display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden}
+  .hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+  .hero::before{content:"";position:absolute;inset:0;z-index:1;
+    background:linear-gradient(180deg,rgba(250,246,241,.66) 0%,rgba(250,246,241,.12) 28%,rgba(43,36,32,0) 50%,rgba(43,36,32,.32) 78%,rgba(43,36,32,.76) 100%);}
+  .hero-top{position:relative;z-index:2;padding:18px 26px 0;text-align:center}
+  .hero-logo{width:96px;height:auto;margin:0 auto;display:block;filter:drop-shadow(0 3px 10px rgba(250,246,241,.7))}
   .hero-loc{font-family:var(--font-b);font-weight:500;font-size:10px;letter-spacing:.4em;color:var(--primary-dark);margin-top:8px}
   .hero-cat{display:inline-block;margin-top:14px;font-size:10.5px;font-weight:700;letter-spacing:.16em;color:#fff;
     background:linear-gradient(100deg,var(--primary) 0%,var(--primary-dark) 100%);padding:6px 15px;border-radius:30px;box-shadow:var(--shadow-sm)}
@@ -131,6 +132,8 @@
   .blk.soft::before,.blk.pearl::before,.blk.accent::before{content:"";position:absolute;inset:0;z-index:1;background:rgba(248,242,236,.66)}
   .blk.dark{background:#241E1B url('images/bg_velvet.png') center / cover no-repeat;color:#fff}
   .blk.dark::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(34,28,25,.72),rgba(34,28,25,.84))}
+  .blk.dark.store{background:#241E1B url('images/r_store.jpg') center / cover no-repeat}
+  .blk.dark.store::before{background:linear-gradient(180deg,rgba(34,28,25,.78),rgba(34,28,25,.88))}
   .sec-head{text-align:center;margin-bottom:30px}
   .sec-head .eyebrow{margin-bottom:8px}
 
@@ -146,7 +149,7 @@
 
   /* worry section (image overlay, no cards) */
   .worry{position:relative;min-height:118vh;display:flex;flex-direction:column;justify-content:center;
-    background:#D9C7BC url('images/worry.png') center top / cover no-repeat;color:#fff;overflow:hidden}
+    background:#D9C7BC url('images/r_worry.jpg') center top / cover no-repeat;color:#fff;overflow:hidden}
   .worry::before{content:"";position:absolute;inset:0;
     background:linear-gradient(180deg,rgba(43,36,32,.18) 0%,rgba(43,36,32,.42) 38%,rgba(43,36,32,.74) 72%,rgba(43,36,32,.86) 100%)}
   .worry-in{position:relative;z-index:2;padding:54px 30px}
@@ -161,7 +164,7 @@
   .worry-foot .em{color:var(--gold-soft);font-size:21px}
 
   /* education with image */
-  .edu-img{position:relative;min-height:64vh;background:#E6D6CC url('images/education.png') center 22% / cover no-repeat;display:flex;align-items:flex-end;color:#fff}
+  .edu-img{position:relative;min-height:64vh;background:#E6D6CC url('images/r_education.jpg') center 20% / cover no-repeat;display:flex;align-items:flex-end;color:#fff}
   .edu-img::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(43,36,32,.05) 0%,rgba(43,36,32,.35) 55%,rgba(43,36,32,.82) 100%)}
   .edu-img .band-in{position:relative;z-index:2;padding:34px 26px 38px}
   .edu-body{font-size:14px;line-height:2.05;color:var(--text);margin-top:4px}
@@ -272,7 +275,7 @@
   .maplink .marr{margin-left:auto;color:var(--gold-soft);font-size:22px;flex:0 0 auto;line-height:1}
 
   /* closing */
-  .closing{background:#E6D4C9 url('images/treatment.png') center 30% / cover no-repeat;position:relative;padding:64px 26px 70px;text-align:center;color:#fff}
+  .closing{background:#E6D4C9 url('images/r_closing.jpg') center 30% / cover no-repeat;position:relative;padding:64px 26px 70px;text-align:center;color:#fff}
   .closing::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(43,36,32,.55),rgba(43,36,32,.8))}
   .closing .inner{position:relative;z-index:2}
   .closing .eyebrow{color:var(--gold-soft)}
@@ -318,11 +321,15 @@
 
   <!-- HERO -->
   <section class="hero">
+    <video class="hero-video" autoplay muted loop playsinline preload="auto" poster="images/r_hero_poster.jpg">
+      <source src="images/hero.mp4" type="video/mp4">
+    </video>
     <div class="hero-top">
-      <div class="hero-brand">The Pearls</div>
-      <div class="hero-loc">KOBE SANNOMIYA ・ KOREAN SKIN CARE</div>
+      <img class="hero-logo" src="images/r_logo.png" alt="The Pearls">
+      <div class="hero-loc" style="margin-top:12px">KOBE SANNOMIYA ・ KOREAN SKIN CARE</div>
       <span class="hero-cat">韓国肌管理 / フェイシャルワックス専門</span>
-      <h1 class="hero-h">毛穴・くすみ・乾燥に。<br>韓国肌管理で、<br><span class="big mk">“素肌”</span>から変わる。</h1>
+      <h1 class="hero-h">毛穴も、くすみも。<br>ツヤツヤの<br><span class="big mk">“ツヤ肌”</span>へ。</h1>
+      <p style="position:relative;z-index:2;margin-top:12px;font-size:12.5px;font-weight:500;letter-spacing:.06em;color:var(--ink);text-shadow:0 1px 14px rgba(250,246,241,.9)">— その日から、ずっと綺麗でいられる肌へ。 —</p>
     </div>
     <div class="hero-bottom">
       <div class="hero-offer">
@@ -342,17 +349,17 @@
     </div>
     <div class="points3 rv">
       <div class="p3">
-        <div class="p3-circle" style="background-image:url('images/skin.png')"><span class="p3-no">1</span></div>
+        <div class="p3-circle" style="background-image:url('images/r_circle1.jpg')"><span class="p3-no">1</span></div>
         <div class="p3-t">産毛・古い角質をオフ</div>
         <div class="p3-d">一段明るい“ツヤ肌”へ</div>
       </div>
       <div class="p3">
-        <div class="p3-circle" style="background-image:url('images/interior.png')"><span class="p3-no">2</span></div>
+        <div class="p3-circle" style="background-image:url('images/r_circle2.jpg')"><span class="p3-no">2</span></div>
         <div class="p3-t">韓国本場の機器と技術</div>
         <div class="p3-d">肌を根本から整える</div>
       </div>
       <div class="p3">
-        <div class="p3-circle" style="background-image:url('images/treatment.png')"><span class="p3-no">3</span></div>
+        <div class="p3-circle" style="background-image:url('images/r_circle3.jpg')"><span class="p3-no">3</span></div>
         <div class="p3-t">無理な勧誘なし</div>
         <div class="p3-d">都度払いOK・初心者歓迎</div>
       </div>
@@ -396,7 +403,7 @@
   </section>
 
   <!-- EDUCATION : what is korean skin care (image band) -->
-  <section class="band" style="background-image:url('images/treatment.png')">
+  <section class="band" style="background-image:url('images/r_korean.jpg')">
     <div class="band-in">
       <span class="eyebrow">What is Korean Skin Care</span>
       <h2 class="band-h"><span class="mk">韓国肌管理</span>とは、<br>“肌そのもの”を育てる技術。</h2>
@@ -415,16 +422,16 @@
       </div>
     </div>
   </section>
-  <section class="menuband" style="background-image:url('images/hp_wax.jpg')">
+  <section class="menuband" style="background-image:url('images/r_menu_wax.jpg')">
     <div class="menuband-in">
       <span class="mtag">人気No.1</span>
       <h3>顔のツヤ肌ワックス</h3>
       <div class="men">Facial Wax</div>
-      <p>専用ワックスでうぶ毛と古い角質を一度にオフ。施術直後から、自分の肌とは思えない<b style="color:#fff">ツヤ・透明感・化粧ノリ</b>を実感。肌のトーンが一段明るくなります。</p>
+      <p>専用ワックスでうぶ毛と古い角質を一度にオフ。施術直後から、思わず触れたくなる<b style="color:#fff">ツヤツヤのツヤ肌</b>へ。化粧ノリも、肌のトーンも一段明るく。</p>
       <div class="mprice"><span class="lb">初回体験（通常¥9,800）</span><span class="pp"><span class="yen">¥</span>8,800</span></div>
     </div>
   </section>
-  <section class="menuband" style="background-image:url('images/products.png')">
+  <section class="menuband" style="background-image:url('images/r_menu_herb.jpg')">
     <div class="menuband-in">
       <span class="mtag">毛穴・ハリ</span>
       <h3>ハーブピーリング</h3>
@@ -433,7 +440,7 @@
       <div class="mprice"><span class="lb">初回クーポン例</span><span class="pp"><span class="yen">¥</span>9,900〜</span></div>
     </div>
   </section>
-  <section class="menuband" style="background-image:url('images/treatment.png')">
+  <section class="menuband" style="background-image:url('images/r_menu_oxygen.jpg')">
     <div class="menuband-in">
       <span class="mtag">うるおい・鎮静</span>
       <h3>韓国 白玉酸素セラピー</h3>
@@ -457,8 +464,8 @@
         <h2 class="sec-h">実際の、素肌の変化</h2>
       </div>
       <div class="ba-grid">
-        <div class="ba-item rv"><img src="images/hp_tsuyahada.jpg" alt="ツヤ肌ワックスのビフォーアフター"></div>
-        <div class="ba-item rv"><img src="images/hp_ubuge.jpg" alt="うぶ毛ケアのビフォーアフター"></div>
+        <div class="ba-item rv"><img src="images/r_ba1.jpg" alt="韓国肌管理のビフォーアフター"></div>
+        <div class="ba-item rv"><img src="images/r_ba2.jpg" alt="ツヤ肌ワックスのビフォーアフター"></div>
       </div>
       <p class="ba-cap rv">※ The Pearls の実際の施術写真です。効果には個人差があります。</p>
     </div>
@@ -473,24 +480,24 @@
         <h2 class="sec-h">The Pearlsが<br>選ばれる理由</h2>
       </div>
       <div class="reason rv">
-        <div class="rimg" style="background-image:url('images/interior.png')"><span class="rno">No.1</span></div>
+        <div class="rimg" style="background-image:url('images/r_reason1.jpg')"><span class="rno">No.1</span></div>
         <h3>韓国本場の機器と技術</h3>
         <p>美容オタクのスタッフが厳選した韓国の専用機器とメソッドを導入。本場の肌管理を、神戸三宮で受けられます。</p>
       </div>
       <div class="reason rv">
-        <div class="rimg" style="background-image:url('images/products.png')"><span class="rno">No.2</span></div>
+        <div class="rimg" style="background-image:url('images/r_reason2.jpg')"><span class="rno">No.2</span></div>
         <h3>無理な勧誘は一切なし</h3>
         <p>高額コースの押し売りはしません。都度払い・回数券から選べるので、初めてのエステでも安心して通えます。</p>
       </div>
       <div class="reason rv">
-        <div class="rimg" style="background-image:url('images/skin.png')"><span class="rno">No.3</span></div>
+        <div class="rimg" style="background-image:url('images/r_reason3.jpg')"><span class="rno">No.3</span></div>
         <h3>全メニューにマッサージ付</h3>
         <p>すべての施術に肩・ヘッドマッサージが付いて、心からリラックス。肌だけでなく、頑張る毎日もほぐします。</p>
       </div>
       <div class="reason rv">
-        <div class="rimg" style="background-image:url('images/education.png')"><span class="rno">No.4</span></div>
-        <h3>“続く美肌”まで導く</h3>
-        <p>施術だけで終わらせません。生活習慣やおうちスキンケアのアドバイスまで。サロンを出た後も、きれいが続きます。</p>
+        <div class="rimg" style="background-image:url('images/r_reason4.jpg')"><span class="rno">No.4</span></div>
+        <h3>“ずっと綺麗”まで導く</h3>
+        <p>施術だけで終わらせません。生活習慣やおうちスキンケアのアドバイスまで。サロンを出た後も、ツヤ肌がずっと続きます。</p>
       </div>
     </div>
   </section>
@@ -637,8 +644,8 @@
   <section class="closing">
     <div class="inner">
       <span class="eyebrow">Your skin, reborn.</span>
-      <h2>鏡を見るのが、<br><span class="mk">楽しみになる毎日</span>へ。</h2>
-      <p class="cp">「もっと早く来ればよかった」——そう言っていただけるように。<br>あなたの素肌が変わる第一歩を、The Pearlsで。</p>
+      <h2>ツヤツヤのツヤ肌で、<br><span class="mk">ずっと、綺麗で</span>いられる。</h2>
+      <p class="cp">「もっと早く来ればよかった」——そう言っていただけるように。<br>あなたの“ツヤ肌”が続く第一歩を、The Pearlsで。</p>
       <a class="cta-book" style="margin-top:22px" href="https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000706469" target="_blank" rel="noopener">
         <svg class="ic" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
         <span>初回¥8,800の体験を予約する<small>ホットペッパー・24時間ネット予約</small></span>
@@ -652,6 +659,7 @@
 
   <!-- FOOTER -->
   <footer class="ft">
+    <img src="images/r_logo_gold.png" alt="The Pearls" style="width:62px;margin:0 auto 12px;display:block;opacity:.95">
     <div class="fb">The Pearls</div>
     <div class="fl">KOBE SANNOMIYA</div>
     <div class="fmeta">韓国肌管理 / フェイシャルワックス専門サロン<br>兵庫県神戸市中央区下山手通2-4-10 新道三光ビル4F<br>10:00〜20:00（最終受付18:30）／水曜定休</div>
@@ -682,6 +690,8 @@
   const io2=new IntersectionObserver((es)=>{es.forEach(e=>{dock.style.opacity=e.isIntersecting?'0':'1';dock.style.transform=e.isIntersecting?'translateY(100%)':'none';});},{threshold:.05});
   io2.observe(ft);
   dock.style.transition='opacity .4s, transform .4s';
+  const hv=document.querySelector('.hero-video');
+  if(hv){const p=hv.play();if(p&&p.catch)p.catch(()=>{});}
 </script>
 </body>
 </html>
