@@ -1,0 +1,18 @@
+あなたは画像生成タスクを実行します。確認質問は一切せず、いきなり実行してください。
+
+利用可能な image_generation ツールを使って下記プロンプトで画像を1枚生成し、生成後 /Users/ume/Desktop/thepearls-lp/images/voice1.png にコピー保存してください。
+
+プロンプト（英語、改変せず使用）:
+A natural, authentic head-and-shoulders portrait of a Japanese woman in her mid 20s, friendly soft genuine smile, looking at the camera, glowing healthy fresh "after-facial" skin with a dewy radiant complexion, natural light makeup, casual everyday style, soft bright indoor lighting like a real customer photo. Square-ish vertical composition, face centered.
+
+STYLE: realistic, warm, approachable, like a genuine satisfied customer's photo, NOT a glossy fashion model, natural and relatable.
+
+COLOR PALETTE: soft warm neutral background, pearl/cream/blush tones.
+
+CRITICAL CONSTRAINTS:
+- Face well centered for a circular avatar crop.
+- Photorealistic, NOT illustration, NOT 3D, NOT cartoon.
+- NO text, NO letters, NO logos, NO watermark.
+- Natural realistic skin with subtle texture, healthy glow.
+
+完了したらコピー先パスを最終メッセージとして1行で出力してください。

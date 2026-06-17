@@ -1,0 +1,25 @@
+あなたは画像生成タスクを実行します。確認質問は一切せず、いきなり実行してください。
+
+利用可能な image_generation ツールを使って下記プロンプトで画像を1枚生成し、生成後 /Users/ume/Desktop/thepearls-lp/images/education.png にコピー保存してください。
+
+プロンプト（英語、改変せず使用）:
+A soft, editorial beauty photograph of a Japanese woman in her early 30s applying skincare lotion or cream to her face with her fingertips at home in front of a mirror, gentle daily self-care moment, soft natural light. Vertical 3:4 composition.
+
+MOOD & STYLE:
+- Calm, intimate everyday skincare scene, representing self-care at home.
+- Soft, clean, premium beauty editorial photography, gentle diffused light, shallow depth of field, fresh and natural.
+
+COLOR PALETTE (strictly):
+- Pearl white #F7F1EC, soft blush pink #E8C7C8, warm champagne beige #E3D2BE, soft cream, warm low-saturation tones.
+
+COMPOSITION:
+- Soft negative space on one side for text overlay.
+- Vertical 3:4 aspect ratio.
+
+CRITICAL CONSTRAINTS:
+- Vertical 3:4 portrait orientation.
+- Photorealistic, NOT illustration, NOT 3D render, NOT cartoon.
+- NO text, NO letters, NO logos, NO watermark.
+- Natural realistic skin texture, elegant and refined.
+
+完了したらコピー先パスを最終メッセージとして1行で出力してください。

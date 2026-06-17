@@ -1,0 +1,25 @@
+あなたは画像生成タスクを実行します。確認質問は一切せず、いきなり実行してください。
+
+利用可能な image_generation ツールを使って下記プロンプトで画像を1枚生成し、生成後 /Users/ume/Desktop/thepearls-lp/images/worry.png にコピー保存してください。
+
+プロンプト（英語、改変せず使用）:
+A soft, editorial beauty photograph of a Japanese woman in her early 30s gently touching her cheek with her fingertips while thoughtfully examining her own skin, with a calm, slightly pensive and reflective expression, soft natural window light. Vertical 3:4 composition.
+
+MOOD & STYLE:
+- Quiet, introspective, elegant. She is looking slightly downward or to the side, contemplative, as if noticing pores, dryness or dullness on her skin.
+- Soft, clean, premium beauty editorial photography, gentle diffused light, shallow depth of field.
+
+COLOR PALETTE (strictly):
+- Pearl white #F7F1EC, soft blush pink #E8C7C8, warm champagne beige #E3D2BE, soft greige, muted warm low-saturation tones.
+
+COMPOSITION:
+- The woman positioned to one side, generous soft negative space for text overlay. A darker, calmer area is fine for legible white text on top.
+- Vertical 3:4 aspect ratio.
+
+CRITICAL CONSTRAINTS:
+- Vertical 3:4 portrait orientation.
+- Photorealistic, NOT illustration, NOT 3D render, NOT cartoon.
+- NO text, NO letters, NO logos, NO watermark.
+- Natural realistic skin texture, elegant and refined, not sad, just thoughtful.
+
+完了したらコピー先パスを最終メッセージとして1行で出力してください。
