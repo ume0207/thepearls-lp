@@ -11,7 +11,7 @@
 <meta property="og:image" content="images/r_hero_poster.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Italianno&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
 <style>
   :root{
     --bg-base:#FAF6F1;       /* pearl warm white */
@@ -78,16 +78,23 @@
     display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden}
   .hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
   .hero::before{content:"";position:absolute;inset:0;z-index:1;
-    background:linear-gradient(180deg,rgba(250,246,241,.66) 0%,rgba(250,246,241,.12) 28%,rgba(43,36,32,0) 50%,rgba(43,36,32,.32) 78%,rgba(43,36,32,.76) 100%);}
+    background:linear-gradient(180deg,rgba(43,36,32,.40) 0%,rgba(43,36,32,.18) 26%,rgba(43,36,32,.08) 48%,rgba(43,36,32,.36) 76%,rgba(43,36,32,.82) 100%);}
   .hero-top{position:relative;z-index:2;padding:18px 26px 0;text-align:center}
-  .hero-logo{width:96px;height:auto;margin:0 auto;display:block;filter:drop-shadow(0 3px 10px rgba(250,246,241,.7))}
-  .hero-loc{font-family:var(--font-b);font-weight:500;font-size:10px;letter-spacing:.4em;color:var(--primary-dark);margin-top:8px}
+  .hero-logo{width:90px;height:auto;margin:0 auto;display:block;filter:drop-shadow(0 2px 10px rgba(0,0,0,.4))}
+  .hero-script{font-family:"Italianno",cursive;font-size:30px;line-height:1;color:var(--gold-soft);margin-top:10px;letter-spacing:.02em;text-shadow:0 2px 12px rgba(0,0,0,.45)}
+  .hero-loc{font-family:var(--font-b);font-weight:600;font-size:9.5px;letter-spacing:.4em;color:#e7d6b4;margin-top:6px}
   .hero-cat{display:inline-block;margin-top:14px;font-size:10.5px;font-weight:700;letter-spacing:.16em;color:#fff;
     background:linear-gradient(100deg,var(--primary) 0%,var(--primary-dark) 100%);padding:6px 15px;border-radius:30px;box-shadow:var(--shadow-sm)}
-  .hero-h{margin-top:14px;font-family:var(--font-h);font-weight:800;color:var(--ink);
-    font-size:26px;line-height:1.55;letter-spacing:.04em;text-shadow:0 1px 18px rgba(250,246,241,.92)}
-  .hero-h .mk{background:linear-gradient(transparent 62%,rgba(227,191,188,.85) 62%);padding:0 .06em}
-  .hero-h .big{font-size:30px;color:var(--primary-dark)}
+  .hero-h{position:relative;margin-top:14px;font-family:var(--font-h);font-weight:800;letter-spacing:.05em;
+    font-size:28px;line-height:1.5;
+    background:linear-gradient(105deg,#A9794A 0%,#D9B978 20%,#F7ECCB 38%,#FFFFFF 50%,#F7ECCB 62%,#D9B978 80%,#A9794A 100%);
+    background-size:220% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;
+    filter:drop-shadow(0 2px 8px rgba(0,0,0,.5));animation:shimmer 5s linear infinite}
+  .hero-h .big{font-size:40px;letter-spacing:.06em}
+  .hero-tag{position:relative;z-index:2;margin-top:14px;font-size:12.5px;font-weight:500;line-height:1.95;letter-spacing:.05em;color:#f3e9e1;text-shadow:0 1px 12px rgba(0,0,0,.55)}
+  @keyframes shimmer{0%{background-position:185% 0}100%{background-position:-45% 0}}
+  .spark{position:absolute;z-index:3;color:#FBEFC9;pointer-events:none;filter:drop-shadow(0 0 5px rgba(231,214,180,.95));animation:twinkle 2.6s ease-in-out infinite}
+  @keyframes twinkle{0%,100%{opacity:.2;transform:scale(.65)}50%{opacity:1;transform:scale(1.15)}}
   .hero-bottom{position:relative;z-index:2;padding:0 18px 90px}
   .hero-offer{text-align:center;padding:0 6px}
   .ho-line{color:#fff;font-family:var(--font-h);font-weight:700;font-size:16px;letter-spacing:.04em;text-shadow:0 2px 14px rgba(43,36,32,.7)}
@@ -126,7 +133,7 @@
   .p3-d{font-size:10.5px;color:var(--text-soft);margin-top:5px;line-height:1.5}
 
   /* generic content block */
-  .blk{padding:54px 0;position:relative}
+  .blk{padding:46px 0;position:relative}
   .blk > *{position:relative;z-index:2}
   .blk.soft,.blk.pearl,.blk.accent{background:#EFE6DD url('images/bg_silk.png') center / cover no-repeat}
   .blk.soft::before,.blk.pearl::before,.blk.accent::before{content:"";position:absolute;inset:0;z-index:1;background:rgba(248,242,236,.66)}
@@ -138,8 +145,8 @@
   .sec-head .eyebrow{margin-bottom:8px}
 
   /* image band (text over image) */
-  .band{position:relative;min-height:78vh;display:flex;align-items:flex-end;background-size:cover;background-position:center;color:#fff}
-  .band.short{min-height:60vh}
+  .band{position:relative;min-height:60vh;display:flex;align-items:flex-end;background-size:cover;background-position:center;color:#fff}
+  .band.short{min-height:54vh}
   .band::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(43,36,32,.06) 0%,rgba(43,36,32,.30) 50%,rgba(43,36,32,.82) 100%)}
   .band-in{position:relative;z-index:2;padding:34px 26px 40px;width:100%}
   .band .eyebrow{color:var(--gold-soft)}
@@ -148,11 +155,11 @@
   .band-p{font-size:13.5px;line-height:2.0;color:#f3e9e1;margin-top:14px;text-shadow:0 1px 10px rgba(0,0,0,.5)}
 
   /* worry section (image overlay, no cards) */
-  .worry{position:relative;min-height:118vh;display:flex;flex-direction:column;justify-content:center;
-    background:#D9C7BC url('images/r_worry.jpg') center top / cover no-repeat;color:#fff;overflow:hidden}
+  .worry{position:relative;min-height:90vh;display:flex;flex-direction:column;justify-content:center;
+    background:#D9C7BC url('images/r_worry.jpg') center 30% / cover no-repeat;color:#fff;overflow:hidden}
   .worry::before{content:"";position:absolute;inset:0;
     background:linear-gradient(180deg,rgba(43,36,32,.18) 0%,rgba(43,36,32,.42) 38%,rgba(43,36,32,.74) 72%,rgba(43,36,32,.86) 100%)}
-  .worry-in{position:relative;z-index:2;padding:54px 30px}
+  .worry-in{position:relative;z-index:2;padding:42px 30px}
   .worry-in .eyebrow{color:var(--gold-soft)}
   .worry-h{font-family:var(--font-h);font-weight:700;font-size:26px;line-height:1.55;letter-spacing:.04em;margin-top:6px;text-shadow:0 2px 16px rgba(0,0,0,.5)}
   .worry-list{margin-top:24px;display:flex;flex-direction:column;gap:15px}
@@ -164,7 +171,7 @@
   .worry-foot .em{color:var(--gold-soft);font-size:21px}
 
   /* education with image */
-  .edu-img{position:relative;min-height:64vh;background:#E6D6CC url('images/r_education.jpg') center 20% / cover no-repeat;display:flex;align-items:flex-end;color:#fff}
+  .edu-img{position:relative;min-height:50vh;background:#E6D6CC url('images/r_education.jpg') center 18% / cover no-repeat;display:flex;align-items:flex-end;color:#fff}
   .edu-img::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(43,36,32,.05) 0%,rgba(43,36,32,.35) 55%,rgba(43,36,32,.82) 100%)}
   .edu-img .band-in{position:relative;z-index:2;padding:34px 26px 38px}
   .edu-body{font-size:14px;line-height:2.05;color:var(--text);margin-top:4px}
@@ -176,7 +183,7 @@
   .edu-key .kp{font-size:13px;line-height:1.95;color:var(--text-soft);margin-top:10px;text-align:left}
 
   /* menu image bands (no cards) */
-  .menuband{position:relative;min-height:62vh;display:flex;align-items:flex-end;background-size:cover;background-position:center;color:#fff}
+  .menuband{position:relative;min-height:52vh;display:flex;align-items:flex-end;background-size:cover;background-position:center;color:#fff}
   .menuband::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(43,36,32,.04) 0%,rgba(43,36,32,.34) 48%,rgba(43,36,32,.86) 100%)}
   .menuband-in{position:relative;z-index:2;padding:30px 28px 34px;width:100%}
   .menuband .mtag{display:inline-block;background:var(--gold);color:#fff;font-size:10.5px;font-weight:700;letter-spacing:.1em;padding:4px 12px;border-radius:20px}
@@ -274,8 +281,19 @@
   .maplink .mtxt em{display:block;font-style:normal;font-size:11px;color:#cbbcb1;margin-top:3px;line-height:1.55}
   .maplink .marr{margin-left:auto;color:var(--gold-soft);font-size:22px;flex:0 0 auto;line-height:1}
 
+  /* salon interior slider */
+  .slider{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;padding:0 26px 4px;scrollbar-width:none}
+  .slider::-webkit-scrollbar{display:none}
+  .slide{flex:0 0 80%;scroll-snap-align:center;border-radius:18px;overflow:hidden;box-shadow:var(--shadow-md);position:relative}
+  .slide img{width:100%;height:auto;display:block}
+  .slide .cap{position:absolute;left:0;right:0;bottom:0;padding:26px 16px 13px;color:#fff;font-size:12px;font-weight:600;letter-spacing:.04em;
+    background:linear-gradient(transparent,rgba(43,36,32,.74));text-shadow:0 1px 8px rgba(0,0,0,.5)}
+  .dots{display:flex;gap:6px;justify-content:center;margin-top:16px}
+  .dots span{width:7px;height:7px;border-radius:50%;background:var(--line);transition:.3s}
+  .dots span.on{background:var(--primary);width:20px;border-radius:4px}
+
   /* closing */
-  .closing{background:#E6D4C9 url('images/r_closing.jpg') center 30% / cover no-repeat;position:relative;padding:64px 26px 70px;text-align:center;color:#fff}
+  .closing{background:#E6D4C9 url('images/r_closing.jpg') center 28% / cover no-repeat;position:relative;padding:52px 26px 58px;text-align:center;color:#fff}
   .closing::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(43,36,32,.55),rgba(43,36,32,.8))}
   .closing .inner{position:relative;z-index:2}
   .closing .eyebrow{color:var(--gold-soft)}
@@ -325,11 +343,16 @@
       <source src="images/hero.mp4" type="video/mp4">
     </video>
     <div class="hero-top">
-      <img class="hero-logo" src="images/r_logo.png" alt="The Pearls">
-      <div class="hero-loc" style="margin-top:12px">KOBE SANNOMIYA ・ KOREAN SKIN CARE</div>
+      <span class="spark" style="top:54px;left:18%;font-size:16px;animation-delay:0s">✦</span>
+      <span class="spark" style="top:120px;right:14%;font-size:22px;animation-delay:.7s">✦</span>
+      <span class="spark" style="top:210px;left:10%;font-size:13px;animation-delay:1.3s">✦</span>
+      <span class="spark" style="top:255px;right:20%;font-size:18px;animation-delay:.4s">✦</span>
+      <img class="hero-logo" src="images/r_logo_gold.png" alt="The Pearls">
+      <div class="hero-script">Non Foundation Life</div>
+      <div class="hero-loc">KOBE SANNOMIYA ・ KOREAN SKIN CARE</div>
       <span class="hero-cat">韓国肌管理 / フェイシャルワックス専門</span>
-      <h1 class="hero-h">毛穴も、くすみも。<br>ツヤツヤの<br><span class="big mk">“ツヤ肌”</span>へ。</h1>
-      <p style="position:relative;z-index:2;margin-top:12px;font-size:12.5px;font-weight:500;letter-spacing:.06em;color:var(--ink);text-shadow:0 1px 14px rgba(250,246,241,.9)">— その日から、ずっと綺麗でいられる肌へ。 —</p>
+      <h1 class="hero-h"><span class="big">“ツヤ肌”</span>で、<br>ノンファンデ生活を<br>あたりまえに。</h1>
+      <p class="hero-tag">ファンデで隠す毎日を、卒業。<br>“素顔がいちばん綺麗”を、あなたにも。</p>
     </div>
     <div class="hero-bottom">
       <div class="hero-offer">
@@ -616,6 +639,27 @@
     </div>
   </section>
 
+  <!-- SALON INTERIOR SLIDER -->
+  <section class="blk soft" style="padding-bottom:40px">
+    <div class="pad">
+      <div class="sec-head rv">
+        <span class="eyebrow">Salon Interior</span>
+        <div class="hr-orn"><span></span></div>
+        <h2 class="sec-h">落ち着ける、<br>プライベートな空間</h2>
+      </div>
+    </div>
+    <div class="rv">
+      <div class="slider" id="slider">
+        <div class="slide"><img src="images/r_slide1.jpg" alt="施術ルーム"><div class="cap">ゆったりくつろげる施術ルーム</div></div>
+        <div class="slide"><img src="images/r_slide2.jpg" alt="メイクルーム"><div class="cap">メイクルーム・パウダースペース完備</div></div>
+        <div class="slide"><img src="images/r_slide3.jpg" alt="ベッド"><div class="cap">清潔感のあるベッド（全3床）</div></div>
+        <div class="slide"><img src="images/r_slide4.jpg" alt="サロン入口"><div class="cap">三ノ宮駅 徒歩5分・ピンクの入口が目印</div></div>
+        <div class="slide"><img src="images/r_slide5.jpg" alt="半個室空間"><div class="cap">カーテンで仕切られた半個室空間</div></div>
+      </div>
+      <div class="dots" id="dots"></div>
+    </div>
+  </section>
+
   <!-- STORE / ACCESS -->
   <section class="blk dark store">
     <div class="pad">
@@ -692,6 +736,9 @@
   dock.style.transition='opacity .4s, transform .4s';
   const hv=document.querySelector('.hero-video');
   if(hv){const p=hv.play();if(p&&p.catch)p.catch(()=>{});}
+  const sl=document.getElementById('slider'),dt=document.getElementById('dots');
+  if(sl&&dt){const n=sl.children.length;for(let i=0;i<n;i++){const s=document.createElement('span');if(i===0)s.className='on';dt.appendChild(s);}
+    sl.addEventListener('scroll',()=>{const i=Math.min(n-1,Math.round(sl.scrollLeft/(sl.scrollWidth/n)));[...dt.children].forEach((d,k)=>d.classList.toggle('on',k===i));});}
 </script>
 </body>
 </html>
