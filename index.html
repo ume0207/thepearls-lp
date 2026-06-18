@@ -126,12 +126,15 @@
   .cta-line{display:flex;align-items:center;justify-content:center;gap:8px;background:#fff;color:#06934a;
     font-weight:700;font-size:13.5px;letter-spacing:.04em;padding:12px;border-radius:44px;text-decoration:none;border:1.5px solid #06C755;margin-top:10px}
   .cta-line .ic{width:18px;height:18px;fill:#06C755}
-  /* popular coupon list */
-  .cpn{padding:18px 2px;border-bottom:1px solid var(--line)}
-  .cpn:last-child{border-bottom:none}
-  .cpn-head{display:flex;align-items:center;gap:8px;margin-bottom:7px}
-  .cpn-tag{background:var(--primary);color:#fff;font-size:10px;font-weight:700;letter-spacing:.06em;padding:3px 11px;border-radius:20px;flex:0 0 auto}
-  .cpn-cat{font-size:10px;color:var(--text-soft);letter-spacing:.08em}
+  /* popular coupon list (image cards) */
+  .cpn-lead{text-align:center;margin:28px 0 2px}
+  .cpn-lead h3{font-family:var(--font-h);font-weight:700;font-size:18px;color:var(--ink);letter-spacing:.03em;line-height:1.5}
+  .cpn{padding:16px 0 18px;border-bottom:1px solid var(--line)}
+  .cpn:last-child{border-bottom:none;padding-bottom:2px}
+  .cpn-img{position:relative;height:148px;border-radius:14px;background-size:cover;background-position:center;box-shadow:var(--shadow-sm);overflow:hidden;margin-bottom:12px}
+  .cpn-img::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(43,36,32,.34) 0%,rgba(43,36,32,0) 44%)}
+  .cpn-tag{position:absolute;top:11px;left:11px;z-index:2;background:var(--primary);color:#fff;font-size:10.5px;font-weight:700;letter-spacing:.06em;padding:4px 12px;border-radius:20px}
+  .cpn-cat{position:absolute;top:14px;right:13px;z-index:2;font-size:10.5px;font-weight:700;color:#fff;letter-spacing:.08em;text-shadow:0 1px 6px rgba(0,0,0,.55)}
   .cpn-name{font-family:var(--font-h);font-weight:700;font-size:16px;color:var(--ink);letter-spacing:.02em;line-height:1.5}
   .cpn-desc{font-size:12px;line-height:1.85;color:var(--text-soft);margin-top:7px}
   .cpn-foot{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:12px;flex-wrap:wrap}
@@ -503,49 +506,6 @@
       <div class="mprice"><span class="lb">初回 W＋白玉酸素（通常¥18,700）</span><span class="pp"><span class="yen">¥</span>13,200</span></div>
     </div>
   </section>
-  <section class="blk soft">
-    <div class="pad">
-      <div class="sec-head rv">
-        <span class="eyebrow gold">Popular Coupons</span>
-        <div class="hr-orn"><span></span></div>
-        <h2 class="sec-h">人気の<br>組み合わせクーポン</h2>
-        <p class="lead" style="margin-top:10px;font-size:12.5px">気になるクーポンから、そのままご予約いただけます。</p>
-      </div>
-      <div class="rv">
-        <div class="cpn">
-          <div class="cpn-head"><span class="cpn-tag">人気No.1</span><span class="cpn-cat">韓国肌管理</span></div>
-          <div class="cpn-name">フェイシャルワックス＋韓国白玉酸素セラピー</div>
-          <p class="cpn-desc">老廃物をデトックスし、水分と栄養をたっぷり補給。ワックス→白玉酸素セラピー（LED付）→モデリングマスクで、うるおう透明肌へ。肩・ヘッドマッサージ付。</p>
-          <div class="cpn-foot">
-            <div class="cpn-price"><span class="cw">通常¥18,700</span><b><span class="yen">¥</span>13,200</b></div>
-            <a class="cpn-book" href="https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000706469&couponId=CP00000010161293" target="_blank" rel="noopener">
-              <svg class="ic" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>このクーポンで予約</a>
-          </div>
-        </div>
-        <div class="cpn">
-          <div class="cpn-head"><span class="cpn-tag">人気No.2</span><span class="cpn-cat">最強肌質改善</span></div>
-          <div class="cpn-name">フェイシャルワックス＋ハーブピーリング</div>
-          <p class="cpn-desc">肌荒れ・毛穴開きにお悩みの方へ。ワックス→ハーブピーリング→お悩み別パックで根本から肌質改善。顔・肩・ヘッドマッサージでむくみもすっきり。</p>
-          <div class="cpn-foot">
-            <div class="cpn-price"><span class="cw">通常¥25,300</span><b><span class="yen">¥</span>17,600</b></div>
-            <a class="cpn-book" href="https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000706469&couponId=CP00000010258790" target="_blank" rel="noopener">
-              <svg class="ic" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>このクーポンで予約</a>
-          </div>
-        </div>
-        <div class="cpn">
-          <div class="cpn-head"><span class="cpn-tag">人気No.3</span><span class="cpn-cat">毛穴集中ケア</span></div>
-          <div class="cpn-name">ハーブピーリング＋毛穴洗浄</div>
-          <p class="cpn-desc">一度で驚きの変化。ハーブピーリングで毛穴汚れを浮かせ、韓国アクアピールで洗浄。ダブル効果で頑固な黒ずみ・ごわつきもオフ。</p>
-          <div class="cpn-foot">
-            <div class="cpn-price"><span class="cw">通常¥22,000</span><b><span class="yen">¥</span>16,500</b></div>
-            <a class="cpn-book" href="https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000706469&couponId=CP00000010161444" target="_blank" rel="noopener">
-              <svg class="ic" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>このクーポンで予約</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <section class="blk pearl" style="padding-top:26px">
     <div class="pad center">
       <p class="lead rv" style="font-size:12.5px">※ブライダルエステ・背中ハーブピーリングなど、目的に合わせた多彩なメニューをご用意。カウンセリングで最適なプランをご提案します。</p>
@@ -696,6 +656,44 @@
           <svg class="ic" viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 5.7 2 10.2c0 4 3.6 7.4 8.5 8.1.3.07.8.2.9.5.08.27.05.7.03.97l-.14.86c-.04.27-.2 1.05.92.57s6.04-3.56 8.24-6.1C21.4 13.5 22 11.9 22 10.2 22 5.7 17.5 2 12 2z"/></svg>
           LINEで相談・ご質問
         </a>
+      </div>
+
+      <div class="cpn-lead rv">
+        <span class="eyebrow gold">Other Popular Coupons</span>
+        <div class="hr-orn"><span></span></div>
+        <h3>もっとしっかりケアしたい方へ。<br>人気の組み合わせクーポン</h3>
+      </div>
+      <div class="rv">
+        <div class="cpn">
+          <div class="cpn-img" style="background-image:url('images/cpn1.jpg')"><span class="cpn-tag">人気No.1</span><span class="cpn-cat">韓国肌管理</span></div>
+          <div class="cpn-name">フェイシャルワックス＋韓国白玉酸素セラピー</div>
+          <p class="cpn-desc">老廃物をデトックスし、水分と栄養をたっぷり補給。ワックス→白玉酸素セラピー（LED付）→モデリングマスクで、うるおう透明肌へ。肩・ヘッドマッサージ付。</p>
+          <div class="cpn-foot">
+            <div class="cpn-price"><span class="cw">通常¥18,700</span><b><span class="yen">¥</span>13,200</b></div>
+            <a class="cpn-book" href="https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000706469&couponId=CP00000010161293" target="_blank" rel="noopener">
+              <svg class="ic" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>このクーポンで予約</a>
+          </div>
+        </div>
+        <div class="cpn">
+          <div class="cpn-img" style="background-image:url('images/cpn2.jpg')"><span class="cpn-tag">人気No.2</span><span class="cpn-cat">最強肌質改善</span></div>
+          <div class="cpn-name">フェイシャルワックス＋ハーブピーリング</div>
+          <p class="cpn-desc">肌荒れ・毛穴開きにお悩みの方へ。ワックス→ハーブピーリング→お悩み別パックで根本から肌質改善。顔・肩・ヘッドマッサージでむくみもすっきり。</p>
+          <div class="cpn-foot">
+            <div class="cpn-price"><span class="cw">通常¥25,300</span><b><span class="yen">¥</span>17,600</b></div>
+            <a class="cpn-book" href="https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000706469&couponId=CP00000010258790" target="_blank" rel="noopener">
+              <svg class="ic" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>このクーポンで予約</a>
+          </div>
+        </div>
+        <div class="cpn">
+          <div class="cpn-img" style="background-image:url('images/cpn3.jpg')"><span class="cpn-tag">人気No.3</span><span class="cpn-cat">毛穴集中ケア</span></div>
+          <div class="cpn-name">ハーブピーリング＋毛穴洗浄</div>
+          <p class="cpn-desc">一度で驚きの変化。ハーブピーリングで毛穴汚れを浮かせ、韓国アクアピールで洗浄。ダブル効果で頑固な黒ずみ・ごわつきもオフ。</p>
+          <div class="cpn-foot">
+            <div class="cpn-price"><span class="cw">通常¥22,000</span><b><span class="yen">¥</span>16,500</b></div>
+            <a class="cpn-book" href="https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000706469&couponId=CP00000010161444" target="_blank" rel="noopener">
+              <svg class="ic" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>このクーポンで予約</a>
+          </div>
+        </div>
       </div>
 
       <div class="submini rv">
