@@ -103,16 +103,15 @@
   .spark{position:absolute;z-index:3;color:#FBEFC9;pointer-events:none;filter:drop-shadow(0 0 5px rgba(231,214,180,.95));animation:twinkle 2.6s ease-in-out infinite}
   @keyframes twinkle{0%,100%{opacity:.2;transform:scale(.65)}50%{opacity:1;transform:scale(1.15)}}
   .hero-bottom{position:relative;z-index:2;padding:0 18px 90px}
-  .hero-offer{text-align:center;padding:0 6px}
-  .ho-line{color:#fff;font-family:var(--font-h);font-weight:700;font-size:16px;letter-spacing:.04em;text-shadow:0 2px 14px rgba(43,36,32,.7)}
-  .ho-tag{display:inline-block;background:var(--gold);color:#fff;font-size:10px;font-weight:700;padding:3px 11px;border-radius:20px;margin-right:8px;letter-spacing:.08em;vertical-align:middle}
-  .ho-price{margin-top:7px;color:#fff;font-size:13px;letter-spacing:.03em;text-shadow:0 2px 14px rgba(43,36,32,.7);display:flex;align-items:center;justify-content:center;gap:7px}
-  .ho-price .was{text-decoration:line-through;text-decoration-color:var(--blush);opacity:.85}
-  .ho-price .arr{color:var(--gold-soft)}
-  .ho-price b{font-family:var(--font-en);font-weight:600;font-size:36px;color:var(--gold-soft);line-height:.8}
-  .ho-price .yen{font-family:var(--font-b);font-size:15px;font-weight:700;color:var(--gold-soft)}
-  .ho-price small{font-size:10px;opacity:.85;align-self:flex-end;margin-bottom:4px}
-  .ho-trust{margin-top:8px;font-size:10.5px;color:#f0e6dd;letter-spacing:.06em;text-shadow:0 1px 10px rgba(43,36,32,.7)}
+  .hero-offer{padding:0 12px}
+  .ho-card{background:rgba(36,30,27,.30);backdrop-filter:blur(13px) saturate(130%);-webkit-backdrop-filter:blur(13px) saturate(130%);
+    border:1px solid rgba(231,214,180,.5);border-radius:20px;padding:14px 18px 16px;text-align:center;box-shadow:0 12px 36px rgba(0,0,0,.3)}
+  .ho-tag{display:inline-block;background:var(--gold);color:#fff;font-size:10px;font-weight:700;letter-spacing:.1em;padding:3px 13px;border-radius:20px}
+  .ho-name{margin-top:9px;font-family:var(--font-h);font-weight:700;font-size:13.5px;letter-spacing:0;color:#fff;text-shadow:0 1px 8px rgba(0,0,0,.45);white-space:nowrap}
+  .ho-price{margin-top:5px;display:flex;align-items:baseline;justify-content:center;gap:4px;color:var(--gold-soft)}
+  .ho-price b{font-family:var(--font-en);font-weight:600;font-size:42px;line-height:.85;text-shadow:0 2px 12px rgba(0,0,0,.35)}
+  .ho-price .yen{font-family:var(--font-b);font-weight:700;font-size:16px}
+  .ho-price small{font-family:var(--font-b);font-weight:500;font-size:11px;color:#f0e6dd;align-self:flex-end;margin-bottom:5px}
 
   /* CTA buttons */
   .cta-book{display:flex;align-items:center;justify-content:center;gap:9px;
@@ -362,9 +361,11 @@
     </div>
     <div class="hero-bottom">
       <div class="hero-offer">
-        <div class="ho-line"><span class="ho-tag">初回お試し</span>フェイシャルワックス＋<br>モデリングパック</div>
-        <div class="ho-price"><b>9,900</b><span class="yen">円</span><small>税込</small></div>
-        <div class="ho-trust">肩・ヘッドマッサージ付／無理な勧誘なし・都度払いOK</div>
+        <div class="ho-card">
+          <span class="ho-tag">初回お試し</span>
+          <div class="ho-name">フェイシャルワックス＋モデリングパック</div>
+          <div class="ho-price"><b>9,900</b><span class="yen">円</span><small>税込</small></div>
+        </div>
       </div>
     </div>
   </section>
