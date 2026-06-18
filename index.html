@@ -74,6 +74,9 @@
   .eyebrow.light{color:var(--gold-soft)}
   .sec-h{font-family:var(--font-h);font-weight:700;letter-spacing:.05em;line-height:1.5;color:var(--ink);font-size:25px}
   .lead{font-size:14.5px;line-height:2.0;color:var(--text-soft);font-weight:400}
+  /* tidy line breaks: balance lines, avoid 4-5 char orphan lines */
+  .sec-h,.band-h,.worry-h,.hero-h,.edu-q,.price-name,.menuband h3,.reason h3,.cpn-name,.cpn-lead h3,.cta-mini .cl,.closing h2,.worry-foot,.kt,
+  .cpn-desc,.menuband p,.band-p,.reason p,.edu-body,.voice p,.lead,.closing .cp{text-wrap:balance}
   .hr-orn{display:flex;align-items:center;justify-content:center;gap:12px;margin:14px 0}
   .hr-orn::before,.hr-orn::after{content:"";height:1px;width:34px;background:var(--gold)}
   .hr-orn span{width:6px;height:6px;border:1px solid var(--gold);transform:rotate(45deg)}
@@ -136,7 +139,7 @@
   .cpn-img::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(43,36,32,.34) 0%,rgba(43,36,32,0) 44%)}
   .cpn-tag{position:absolute;top:11px;left:11px;z-index:2;background:var(--primary);color:#fff;font-size:10.5px;font-weight:700;letter-spacing:.06em;padding:4px 12px;border-radius:20px}
   .cpn-cat{position:absolute;top:14px;right:13px;z-index:2;font-size:10.5px;font-weight:700;color:#fff;letter-spacing:.08em;text-shadow:0 1px 6px rgba(0,0,0,.55)}
-  .cpn-name{font-family:var(--font-h);font-weight:700;font-size:16px;color:var(--ink);letter-spacing:.02em;line-height:1.5}
+  .cpn-name{font-family:var(--font-h);font-weight:700;font-size:15px;color:var(--ink);letter-spacing:.01em;line-height:1.55}
   .cpn-desc{font-size:12px;line-height:1.85;color:var(--text-soft);margin-top:7px}
   .cpn-foot{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:12px;flex-wrap:wrap}
   .cpn-price{line-height:1.15}
@@ -188,8 +191,8 @@
   .band-p{font-size:13.5px;line-height:2.0;color:#f3e9e1;margin-top:14px;text-shadow:0 1px 10px rgba(0,0,0,.5)}
 
   /* worry section (image overlay, no cards) */
-  .worry{position:relative;min-height:90vh;display:flex;flex-direction:column;justify-content:center;
-    background:#D9C7BC url('images/r_worry.jpg') center 30% / cover no-repeat;color:#fff;overflow:hidden}
+  .worry{position:relative;min-height:64vh;display:flex;flex-direction:column;justify-content:center;
+    background:#D9C7BC url('images/r_worry.jpg') center 40% / cover no-repeat;color:#fff;overflow:hidden}
   .worry::before{content:"";position:absolute;inset:0;
     background:linear-gradient(180deg,rgba(43,36,32,.18) 0%,rgba(43,36,32,.42) 38%,rgba(43,36,32,.74) 72%,rgba(43,36,32,.86) 100%)}
   .worry-in{position:relative;z-index:2;padding:42px 30px}
@@ -204,7 +207,7 @@
   .worry-foot .em{color:var(--gold-soft);font-size:21px}
 
   /* education with image */
-  .edu-img{position:relative;min-height:50vh;background:#E6D6CC url('images/r_education.jpg') center 18% / cover no-repeat;display:flex;align-items:flex-end;color:#fff}
+  .edu-img{position:relative;min-height:40vh;background:#E6D6CC url('images/r_education.jpg') center 30% / cover no-repeat;display:flex;align-items:flex-end;color:#fff}
   .edu-img::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(43,36,32,.05) 0%,rgba(43,36,32,.35) 55%,rgba(43,36,32,.82) 100%)}
   .edu-img .band-in{position:relative;z-index:2;padding:34px 26px 38px}
   .edu-body{font-size:14px;line-height:2.05;color:var(--text);margin-top:4px}
