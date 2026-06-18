@@ -126,6 +126,23 @@
   .cta-line{display:flex;align-items:center;justify-content:center;gap:8px;background:#fff;color:#06934a;
     font-weight:700;font-size:13.5px;letter-spacing:.04em;padding:12px;border-radius:44px;text-decoration:none;border:1.5px solid #06C755;margin-top:10px}
   .cta-line .ic{width:18px;height:18px;fill:#06C755}
+  /* popular coupon list */
+  .cpn{padding:18px 2px;border-bottom:1px solid var(--line)}
+  .cpn:last-child{border-bottom:none}
+  .cpn-head{display:flex;align-items:center;gap:8px;margin-bottom:7px}
+  .cpn-tag{background:var(--primary);color:#fff;font-size:10px;font-weight:700;letter-spacing:.06em;padding:3px 11px;border-radius:20px;flex:0 0 auto}
+  .cpn-cat{font-size:10px;color:var(--text-soft);letter-spacing:.08em}
+  .cpn-name{font-family:var(--font-h);font-weight:700;font-size:16px;color:var(--ink);letter-spacing:.02em;line-height:1.5}
+  .cpn-desc{font-size:12px;line-height:1.85;color:var(--text-soft);margin-top:7px}
+  .cpn-foot{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:12px;flex-wrap:wrap}
+  .cpn-price{line-height:1.15}
+  .cpn-price .cw{display:block;font-size:11px;color:var(--text-soft);text-decoration:line-through;text-decoration-color:var(--primary);letter-spacing:.04em}
+  .cpn-price b{font-family:var(--font-en);font-weight:600;font-size:28px;color:var(--primary-dark)}
+  .cpn-price b .yen{font-family:var(--font-b);font-size:14px;font-weight:700}
+  .cpn-book{display:inline-flex;align-items:center;gap:6px;background:linear-gradient(180deg,#C49A82,var(--book) 60%,var(--book-dark));
+    color:#fff;font-weight:700;font-size:12.5px;letter-spacing:.03em;padding:11px 16px;border-radius:40px;text-decoration:none;box-shadow:0 6px 16px rgba(145,95,71,.3);transition:transform .2s}
+  .cpn-book:active{transform:scale(.97)}
+  .cpn-book .ic{width:15px;height:15px;stroke:#fff;fill:none}
   /* inline mini CTA (repeated through the page) */
   .cta-mini{text-align:center;margin-top:34px}
   .cta-mini .cl{font-family:var(--font-h);font-weight:700;font-size:19px;line-height:1.7;color:var(--ink);letter-spacing:.03em}
@@ -367,7 +384,7 @@
     </div>
     <div class="hero-bottom">
       <div class="hero-offer">
-        <a class="ho-card" href="https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000706469" target="_blank" rel="noopener">
+        <a class="ho-card" href="https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000706469&couponId=CP00000011087663" target="_blank" rel="noopener">
           <div class="ho-label">初回お試し</div>
           <div class="ho-name">フェイシャルワックス＋モデリングパック</div>
           <div class="ho-price"><b>9,900</b><span class="yen">円</span><small>税込</small></div>
@@ -486,12 +503,55 @@
       <div class="mprice"><span class="lb">初回 W＋白玉酸素（通常¥18,700）</span><span class="pp"><span class="yen">¥</span>13,200</span></div>
     </div>
   </section>
+  <section class="blk soft">
+    <div class="pad">
+      <div class="sec-head rv">
+        <span class="eyebrow gold">Popular Coupons</span>
+        <div class="hr-orn"><span></span></div>
+        <h2 class="sec-h">人気の<br>組み合わせクーポン</h2>
+        <p class="lead" style="margin-top:10px;font-size:12.5px">気になるクーポンから、そのままご予約いただけます。</p>
+      </div>
+      <div class="rv">
+        <div class="cpn">
+          <div class="cpn-head"><span class="cpn-tag">人気No.1</span><span class="cpn-cat">韓国肌管理</span></div>
+          <div class="cpn-name">フェイシャルワックス＋韓国白玉酸素セラピー</div>
+          <p class="cpn-desc">老廃物をデトックスし、水分と栄養をたっぷり補給。ワックス→白玉酸素セラピー（LED付）→モデリングマスクで、うるおう透明肌へ。肩・ヘッドマッサージ付。</p>
+          <div class="cpn-foot">
+            <div class="cpn-price"><span class="cw">通常¥18,700</span><b><span class="yen">¥</span>13,200</b></div>
+            <a class="cpn-book" href="https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000706469&couponId=CP00000010161293" target="_blank" rel="noopener">
+              <svg class="ic" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>このクーポンで予約</a>
+          </div>
+        </div>
+        <div class="cpn">
+          <div class="cpn-head"><span class="cpn-tag">人気No.2</span><span class="cpn-cat">最強肌質改善</span></div>
+          <div class="cpn-name">フェイシャルワックス＋ハーブピーリング</div>
+          <p class="cpn-desc">肌荒れ・毛穴開きにお悩みの方へ。ワックス→ハーブピーリング→お悩み別パックで根本から肌質改善。顔・肩・ヘッドマッサージでむくみもすっきり。</p>
+          <div class="cpn-foot">
+            <div class="cpn-price"><span class="cw">通常¥25,300</span><b><span class="yen">¥</span>17,600</b></div>
+            <a class="cpn-book" href="https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000706469&couponId=CP00000010258790" target="_blank" rel="noopener">
+              <svg class="ic" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>このクーポンで予約</a>
+          </div>
+        </div>
+        <div class="cpn">
+          <div class="cpn-head"><span class="cpn-tag">人気No.3</span><span class="cpn-cat">毛穴集中ケア</span></div>
+          <div class="cpn-name">ハーブピーリング＋毛穴洗浄</div>
+          <p class="cpn-desc">一度で驚きの変化。ハーブピーリングで毛穴汚れを浮かせ、韓国アクアピールで洗浄。ダブル効果で頑固な黒ずみ・ごわつきもオフ。</p>
+          <div class="cpn-foot">
+            <div class="cpn-price"><span class="cw">通常¥22,000</span><b><span class="yen">¥</span>16,500</b></div>
+            <a class="cpn-book" href="https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000706469&couponId=CP00000010161444" target="_blank" rel="noopener">
+              <svg class="ic" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>このクーポンで予約</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="blk pearl" style="padding-top:26px">
     <div class="pad center">
       <p class="lead rv" style="font-size:12.5px">※ブライダルエステ・背中ハーブピーリングなど、目的に合わせた多彩なメニューをご用意。カウンセリングで最適なプランをご提案します。</p>
       <div class="cta-mini rv">
         <p class="cl">気になるメニューで、まずは<br><span class="mk">“ツヤ肌”</span>デビューしませんか？</p>
-        <a class="cta-book" href="https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000706469" target="_blank" rel="noopener">
+        <a class="cta-book" href="https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000706469&couponId=CP00000011087663" target="_blank" rel="noopener">
           <svg class="ic" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
           <span>初回お試し¥9,900を予約する<small>ホットペッパー・24時間ネット予約</small></span>
         </a>
@@ -514,7 +574,7 @@
       <p class="ba-cap rv">※ The Pearls の実際の施術写真です。効果には個人差があります。</p>
       <div class="cta-mini rv">
         <p class="cl">次に<span class="mk">“ツヤ肌”</span>へ変わるのは、<br>あなたの番です。</p>
-        <a class="cta-book" href="https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000706469" target="_blank" rel="noopener">
+        <a class="cta-book" href="https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000706469&couponId=CP00000011087663" target="_blank" rel="noopener">
           <svg class="ic" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
           <span>初回お試し¥9,900を予約する<small>ホットペッパー・24時間ネット予約</small></span>
         </a>
@@ -552,7 +612,7 @@
       </div>
       <div class="cta-mini rv">
         <p class="cl">迷っているなら、まず一度<br><span class="mk">“ツヤ肌”</span>を体感してみて。</p>
-        <a class="cta-book" href="https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000706469" target="_blank" rel="noopener">
+        <a class="cta-book" href="https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000706469&couponId=CP00000011087663" target="_blank" rel="noopener">
           <svg class="ic" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
           <span>初回お試し¥9,900を予約する<small>ホットペッパー・24時間ネット予約</small></span>
         </a>
@@ -595,7 +655,7 @@
       <p class="lead center rv" style="font-size:12px;margin-top:14px">※ホットペッパービューティーに寄せられた口コミより抜粋。写真はイメージです。効果には個人差があります。</p>
       <div class="cta-mini rv">
         <p class="cl">あなたも、<span class="mk">“ツヤ肌”</span>の<br>仲間入りしませんか？</p>
-        <a class="cta-book" href="https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000706469" target="_blank" rel="noopener">
+        <a class="cta-book" href="https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000706469&couponId=CP00000011087663" target="_blank" rel="noopener">
           <svg class="ic" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
           <span>初回お試し¥9,900を予約する<small>ホットペッパー・24時間ネット予約</small></span>
         </a>
@@ -628,7 +688,7 @@
           </ul>
         </div>
         <div class="price-limit">完全予約制・お席に限りがございます</div>
-        <a class="cta-book" href="https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000706469" target="_blank" rel="noopener">
+        <a class="cta-book" href="https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000706469&couponId=CP00000011087663" target="_blank" rel="noopener">
           <svg class="ic" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
           <span>ホットペッパーで予約する<small>24時間ネット予約OK</small></span>
         </a>
@@ -731,7 +791,7 @@
       <span class="eyebrow">Your skin, reborn.</span>
       <h2>ツヤツヤのツヤ肌で、<br><span class="mk">ずっと、綺麗で</span>いられる。</h2>
       <p class="cp">「もっと早く来ればよかった」——そう言っていただけるように。<br>あなたの“ツヤ肌”が続く第一歩を、The Pearlsで。</p>
-      <a class="cta-book" style="margin-top:22px" href="https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000706469" target="_blank" rel="noopener">
+      <a class="cta-book" style="margin-top:22px" href="https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000706469&couponId=CP00000011087663" target="_blank" rel="noopener">
         <svg class="ic" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
         <span>初回お試し¥9,900を予約する<small>ホットペッパー・24時間ネット予約</small></span>
       </a>
@@ -759,7 +819,7 @@
   <div class="dock">
     <div class="dock-in">
       <div class="dock-price"><div class="dl">初回お試し</div><div class="dv"><span class="yen">¥</span>9,900</div></div>
-      <a class="dbook" href="https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000706469" target="_blank" rel="noopener">
+      <a class="dbook" href="https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000706469&couponId=CP00000011087663" target="_blank" rel="noopener">
         <svg class="ic" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
         ネットで予約する
       </a>
