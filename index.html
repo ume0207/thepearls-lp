@@ -103,9 +103,10 @@
   .spark{position:absolute;z-index:3;color:#FBEFC9;pointer-events:none;filter:drop-shadow(0 0 5px rgba(231,214,180,.95));animation:twinkle 2.6s ease-in-out infinite}
   @keyframes twinkle{0%,100%{opacity:.2;transform:scale(.65)}50%{opacity:1;transform:scale(1.15)}}
   .hero-bottom{position:relative;z-index:2;padding:0 18px 90px}
-  .hero-offer{padding:0 20px}
-  .ho-card{background:rgba(36,30,27,.28);backdrop-filter:blur(14px) saturate(130%);-webkit-backdrop-filter:blur(14px) saturate(130%);
-    border:1px solid rgba(231,214,180,.42);border-radius:15px;padding:10px 16px 11px;text-align:center;box-shadow:0 10px 28px rgba(0,0,0,.26)}
+  .hero-offer{text-align:center;padding:0 16px}
+  .ho-card{display:inline-block;text-decoration:none;background:rgba(36,30,27,.28);backdrop-filter:blur(14px) saturate(130%);-webkit-backdrop-filter:blur(14px) saturate(130%);
+    border:1px solid rgba(231,214,180,.42);border-radius:14px;padding:7px 14px 8px;text-align:center;box-shadow:0 10px 28px rgba(0,0,0,.26);transition:transform .2s}
+  .ho-card:active{transform:scale(.985)}
   .ho-label{font-size:9.5px;font-weight:700;letter-spacing:.18em;color:var(--gold-soft);text-shadow:0 1px 6px rgba(0,0,0,.4)}
   .ho-name{margin-top:3px;font-family:var(--font-h);font-weight:700;font-size:13px;letter-spacing:0;color:#fff;text-shadow:0 1px 8px rgba(0,0,0,.45);white-space:nowrap}
   .ho-price{margin-top:1px;display:flex;align-items:baseline;justify-content:center;gap:4px;color:var(--gold-soft)}
@@ -362,12 +363,12 @@
     </div>
     <div class="hero-bottom">
       <div class="hero-offer">
-        <div class="ho-card">
+        <a class="ho-card" href="https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000706469" target="_blank" rel="noopener">
           <div class="ho-label">初回お試し</div>
           <div class="ho-name">フェイシャルワックス＋モデリングパック</div>
           <div class="ho-price"><b>9,900</b><span class="yen">円</span><small>税込</small></div>
           <div class="ho-trust">肩・ヘッドマッサージ付／無理な勧誘なし・都度払いOK</div>
-        </div>
+        </a>
       </div>
     </div>
   </section>
